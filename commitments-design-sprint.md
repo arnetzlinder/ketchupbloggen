@@ -2,7 +2,7 @@
 Vi träffas gemensamt på kontorstid. Vi har bokade träffar för denna första vecka. 
 Avstämmer med gruppen via träffarna och i chatt om något dyker upp. 
 Gruppkodar i Figma under denna första uppgift. 
-Vidare kommer vi arbeta med issue i Github när vi kodar upp sidan sen. 
+Vidare kommer vi arbeta med issues och designerade branches i Github när vi kodar upp sidan sen. 
 Meddelar när vi får förhinder i vår teams grupp. 
 Kommunikation är a och o. Ta kontakt när man får problem eller känner sig osäker.
 Sjuk och förhinder kan man få meddela de andra.
@@ -19,5 +19,5 @@ Kommer uppdatera commitments nästa vecka när vi går över till kod.
 
 ## Underskrivet av
 @Therese Hölén
-@anvandare2
+@David Stålgren
 @anvandare3
