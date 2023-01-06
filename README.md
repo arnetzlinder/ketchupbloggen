@@ -71,5 +71,5 @@ I desktopvyn ska:
 * Om ketchup-blocket ska vara 1.5 kolumner brett
 * Vertikalt mellanrum mellan dessa block ska vara 34px
 * I receptblocken ska bilden ligga till vänster med rubriken över sig medans texten om receptet och visa receptknappen ska ligga till höger enligt figmaskissen
-* Rubriktexten H1 motsvara 32px storlek, H2 ska motsvara 32px , löptext 16px 
+* Rubriktexten H1 motsvara 64px storlek, H2 ska motsvara 32px , löptext 16px 
 
