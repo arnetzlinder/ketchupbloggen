@@ -18,6 +18,9 @@ I repot finns:
 * Den här instruktionen.
 
 I figmafilen finns både designlayout för mobil, tablet och desktopvy samt en egen fil med assets.
+Länk till figma: https://www.figma.com/file/2kydrMxWusrDzc3zgyvwH0/Ketchupen?node-id=17%3A4&t=B89pdcVONGWrf1Yt-1
+Lösenord: Ketchup4Sure
+
 I den hittar ni knappar, headers med mera och vi har lagt till kommentarer för olika element för att förklara ytterligare såsom hover och focus states eller vart olika headers ska användas.
 
 De breakpoints vi har tänkt oss är: 
