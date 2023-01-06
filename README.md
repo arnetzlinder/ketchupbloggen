@@ -38,6 +38,7 @@ I alla vyer:
 * Underst ska disclaimer och footer ligga och uppta hela skämbredden. 
 * Rätt sorts receptblock användas enligt de varianter som finns i figma-assets filen, där finns uppskissade receptblock för varje enhetstyp
 * Förstoringsglasikonen ska alltid ligga till höger om sökrutan
+* Alla recept-bilder ska vara ett bildspel med tre bilder (se filnamn på bild) som dels går att växla manuellt men som också växlar automatiskt efter 2 sekunder.
 
 I mobilvyn ska:
 * Rubriken ligga 20px från toppen och vänster.
@@ -48,6 +49,7 @@ I mobilvyn ska:
 * Receptblocken inte ha rundade hörn
 * Menyn ska fällas ut med valfri snitsig animation
 * Rubriktexten H1 motsvara 32px storlek, H2 ska motsvara 20px , löptext 16px 
+* När man klickar på Visa recept fälls recepet ut på plats (se bild) och döljer underliggande rutor. När man sedan trycker på stäng återgår man till tidigare vy.
 
 
 I tabletvyn ska:
@@ -59,6 +61,7 @@ I tabletvyn ska:
 * I högra spalten ska om ketchup-blocket ligga och uppta en hel skärmhöjd
 * Menyn ska fällas ut med valfri snitsig animation som fungerar likadant som den i mobilvyn
 * Rubriktexten H1 motsvara 64px storlek, H2 ska motsvara 24px , löptext 16px 
+* När man klickar på Visa recept fälls recepet ut och tar över hela ytan. När man sedan trycker på stäng återgår man till tidigare vy.
 
 I desktopvyn ska:
 * Rubriken ligga 80px från vänster och 45px från toppen
@@ -72,4 +75,5 @@ I desktopvyn ska:
 * Vertikalt mellanrum mellan dessa block ska vara 34px
 * I receptblocken ska bilden ligga till vänster med rubriken över sig medans texten om receptet och visa receptknappen ska ligga till höger enligt figmaskissen
 * Rubriktexten H1 motsvara 64px storlek, H2 ska motsvara 32px , löptext 16px 
+* När man klickar på Visa recept fälls recepet ut och täcker fyra kolumner (lämna två yttersta kolumnerna tomma). När man sedan trycker på stäng återgår man till tidigare vy.
 
