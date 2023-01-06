@@ -37,6 +37,7 @@ I alla vyer ska:
 * Förstoringsglasikonen ska alltid ligga till höger om sökrutan
 
 
+
 I mobilvyn ska:
 * Rubriken ligga 20px från toppen och vänster.
 * Under headern med rubriken ska det till vänster vara en hamburgermeny (även fast det ser ut som en knapp i figma ;))
@@ -45,6 +46,7 @@ I mobilvyn ska:
 * Innehållet ska gå ända ut till kanten
 * Receptblocken inte ha rundade hörn
 * Menyn ska fällas ut med valfri snitsig animation
+* Rubriktexten H1 motsvara 32px storlek, H2 ska motsvara 20px , löptext 16px 
 
 
 I tabletvyn ska:
@@ -54,7 +56,8 @@ I tabletvyn ska:
 * Innehållet ska gå ända ut till kanten
 * I den vänstra spalten ska receptblocken ligga och deras hörn in mot mitten ska ha border radius på 8px.
 * I högra spalten ska om ketchup-blocket ligga och uppta en hel skärmhöjd
-* Menyn ska fällas ut med valfri snitsig animation
+* Menyn ska fällas ut med valfri snitsig animation som fungerar likadant som den i mobilvyn
+* Rubriktexten H1 motsvara 64px storlek, H2 ska motsvara 24px , löptext 16px 
 
 I desktopvyn ska:
 * Rubriken ligga 80px från vänster och 45px från toppen
@@ -67,4 +70,5 @@ I desktopvyn ska:
 * Om ketchup-blocket ska vara 1.5 kolumner brett
 * Vertikalt mellanrum mellan dessa block ska vara 34px
 * I receptblocken ska bilden ligga till vänster med rubriken över sig medans texten om receptet och visa receptknappen ska ligga till höger enligt figmaskissen
+* Rubriktexten H1 motsvara 32px storlek, H2 ska motsvara 32px , löptext 16px 
 
