@@ -37,7 +37,7 @@ I alla vyer:
 * I "Om ketchup"-blocket ska texten flyta till höger om bilden.
 * Underst ska disclaimer och footer ligga och uppta hela skärmbredden. 
 * Rätt sorts receptblock användas enligt de varianter som finns i figma-assets filen, där finns uppskissade receptblock för varje enhetstyp, receptblocken fälls ut i full storlek enligt bilder i figmaskissen när man klicka på "visa recept" och stängs till kortelement igen när man klickar på stäng.
-* Förstoringsglasikonen ska alltid ligga till höger om sökrutan, hur designen ser ut när man skriver i sökrutan visas i skisserna.
+* Förstoringsglasikonen ska alltid ligga till höger om sökrutan, hur designen ser ut när man skriver i sökrutan visas i skisserna, där man ser att förslag dyker upp i en dropdownmeny.
 
 I mobilvyn ska:
 * Rubriken ligga 20px från toppen och vänster.
