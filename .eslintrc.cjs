@@ -18,6 +18,7 @@ module.exports = {
     'vue'
   ],
   rules: {
+    'no-console': ['warn', { allow: ['warn', 'error', 'log'] }],
   }
 
 }
