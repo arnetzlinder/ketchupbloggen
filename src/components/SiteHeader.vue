@@ -8,7 +8,7 @@
 </template>
 
 <style scoped lang="scss">
-@forward '../scss/style.scss';
+@import '../scss/style.scss';
 
 @media screen and (min-width: 360px) {
     header{  
