@@ -10,34 +10,56 @@ function toggleMenu(isMenuOpen:boolean):void { //här behöver jag lite hjälp m
 </script>
 
 <template>
-    <nav>
-        <MainHamburger @menu-click="toggleMenu"/>
+    <section> <!--TILLFÄLLIG platshållare -->
+        <nav>
+        <MainHamburger @menu-click="toggleMenu"/>  
             <ul v-if="showMenu">
-                <h2>Meny</h2> <!--kolla figma vilken typ av h! -->
+                <h2>Meny</h2>
                 <li>Historia</li>
                 <li>Förrätter</li>
                 <li>Huvudrätter</li>
                 <li>Efterrätter</li>
             </ul>
-    </nav> 
+        </nav> 
+    </section>
 </template>
 
 <style scoped lang="scss">
 
+section {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+}
+
 nav {
     background-color: #d9d9d990;
-    width: 80%;
+    padding: 0;
+    width: 70%;
+    height: auto;
     border: 1px solid #5A5A5A;
     border-radius: 8px;
+    margin: 5px 0 0 8px;
 
     ul {
+        padding: 0;
         list-style: none;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        display: inline;
+        
+        li {
+            margin: 1.5rem 0;
+        }
     }
 
     h2 {
         font-size: 2rem;
         font-family: 'Seymour One', sans-serif;
+        margin-top: 0;
+        margin-bottom: 2.5rem;
     }
 }
 </style>

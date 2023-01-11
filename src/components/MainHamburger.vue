@@ -32,14 +32,16 @@ button {
     color: #FFF3D0;
     font-family: 'Istok Web', sans-serif;
     font-size: 1rem;
-    width: 76px;
-    height: 25px;
-    padding: 1.5rem 1rem;
-    border: 3px solid black; 
-    border-radius: 15px;
+    width: 60px;
+    height: 35px;
+    padding: 0.5rem;
+    border: 2px solid black; 
+    border-radius: 10px;
     display: flex;
     align-items: center;
     text-align: center;
+    display: inline;
+    z-index: 10;
 
     &:hover {
         background-color: #AA1700;
