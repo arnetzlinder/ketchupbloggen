@@ -20,7 +20,7 @@ export default {
     },
     mounted() {
         const acceptedCookies = localStorage.getItem('acceptedCookies')
-        if (acceptedCookies) {
+        if (acceptedCookies === 'true') {
             this.showCookieBanner = false
         }
     } 
