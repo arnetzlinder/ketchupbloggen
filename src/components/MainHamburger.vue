@@ -1,20 +1,29 @@
+<script setup lang="ts">
+import { ref } from "vue";
+
+const menuIsOpen = ref(false);
+
+const emit = defineEmits(['menuClick']);
+// export default {
+//     methods: {
+//         menuOpenClose() {
+//             console.log('clicketi')
+//             menuIsOpen. value = !menuIsOpen.value;
+//         }
+//     } 
+// }
+function menuOpenClose() {
+    console.log('klick');
+    menuIsOpen. value = !menuIsOpen.value;
+
+    emit('menuClick', menuIsOpen.value);
+}
+</script>
+
 <template>
     <button @click="menuOpenClose">Meny
     </button>
 </template>
-
-<script lang="ts">
-export default {
-    methods: {
-        menuOpenClose() {
-            console.log('clicketi')
-        }
-    } 
-}
-// function menuOpenClose() {
-//     console.log('klick');
-// }
-</script>
 
 <style scoped lang="scss">
 
