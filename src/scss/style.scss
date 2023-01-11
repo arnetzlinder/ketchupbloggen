@@ -1,16 +1,8 @@
-@forward 'reset.scss';
+@import 'reset.scss';
+@import 'variables.scss';
 
-$primaryColor100: #FFF3D0;
-$primaryColor200: #C41A00;
-$primaryColor300: #317A1F;
-$secondaryColor100: #AE9E6F;
-$secondaryColor200: #530A02;
-$secondaryColor300: #230201;
 
-$primaryFont: 'Seymour One', sans-serif;
-$secondaryFont: 'Istok Web', sans-serif;
-
-body{
+body {
   background-color: $primaryColor100;
   font-family: $secondaryFont;
 }
