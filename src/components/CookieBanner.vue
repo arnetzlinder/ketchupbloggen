@@ -1,18 +1,31 @@
 <template>
-    <div v-if="!hide">
+    <div v-if="showCookieBanner">
         <p>Tillåt användning av cookies</p>
-        <button @click="hide = !hide">Acceptera och stäng</button>
+        <button @click="acceptCookies">Acceptera och stäng</button>
     </div>
 </template>
 
 <script lang="ts">
-    export default {
-        data() {
-            return {
-                hide: false
-            }
+export default {
+    data() {
+        return {
+            showCookieBanner: true,
         }
-    }
+    },
+    methods: {
+        acceptCookies() {
+            this.showCookieBanner = false
+            localStorage.setItem('acceptedCookies', String(true))
+        },
+    },
+    mounted() {
+        const acceptedCookies = localStorage.getItem('acceptedCookies')
+        if (acceptedCookies) {
+            this.showCookieBanner = false
+        }
+    } 
+}
+
 </script>
 
 <style lang="scss" scoped>
