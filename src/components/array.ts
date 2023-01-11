@@ -36,7 +36,7 @@ let recepies: {img1: string; img2: string; img3: string; alt1: string; alt2: str
       width: 200,
       height: "auto",
       name: "Gazpacho",
-      Ingredienser: "",
+      Ingredienser: "Tomat",
       Tillagning: "",
     },
   ];
