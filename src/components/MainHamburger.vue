@@ -13,15 +13,15 @@ const emit = defineEmits(['menuClick']);
 //     } 
 // }
 function menuOpenClose() {
-    console.log('klick');
-    menuIsOpen. value = !menuIsOpen.value;
+    menuIsOpen.value = !menuIsOpen.value;
+    console.log(menuIsOpen.value); // NÄR menuisOpen = true, add classlist active to #menuBtn
 
     emit('menuClick', menuIsOpen.value);
 }
 </script>
 
 <template>
-    <button @click="menuOpenClose">Meny
+    <button id="menuBtn" @click="menuOpenClose">Meny
     </button>
 </template>
 
@@ -44,8 +44,8 @@ button {
     &:hover {
         background-color: #AA1700;
     }
-    &:active {
-        background-color: #650D00;
+    &:active, .active {
+        background-color: #530A02;
     }
 }
 </style>
