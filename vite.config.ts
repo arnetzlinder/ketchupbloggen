@@ -8,4 +8,11 @@ export default defineConfig({
   define: {
     'process.env': {},
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "./src/styles/_config.scss";',
+      },
+    },
+  },
 })
