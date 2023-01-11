@@ -11,14 +11,15 @@ function toggleMenu(isMenuOpen:boolean):void { //här behöver jag lite hjälp m
 
 <template>
     <section> <!--TILLFÄLLIG platshållare -->
+        <MainHamburger @menu-click="toggleMenu"/>
+        [Searchbar leta recept osv] [ikon]  
         <nav>
-        <MainHamburger @menu-click="toggleMenu"/>  
             <ul v-if="showMenu">
                 <h2>Meny</h2>
-                <li>Historia</li>
-                <li>Förrätter</li>
-                <li>Huvudrätter</li>
-                <li>Efterrätter</li>
+                <li><a href="#">Historia</a></li>
+                <li><a href="#">Förrätter</a></li>
+                <li><a href="#">Huvudrätter</a></li>
+                <li><a href="#">Efterrätter</a></li>
             </ul>
         </nav> 
     </section>
@@ -30,7 +31,8 @@ section {
     background-color: white;
     position: absolute;
     width: 100%;
-    height: 50px;
+    height: 40px;
+    padding: 5px 0 0 8px;
 }
 
 nav {
@@ -40,7 +42,8 @@ nav {
     height: auto;
     border: 1px solid #5A5A5A;
     border-radius: 8px;
-    margin: 5px 0 0 8px;
+    margin: 5px 0;
+
 
     ul {
         padding: 0;
@@ -48,18 +51,30 @@ nav {
         text-align: center;
         display: flex;
         flex-direction: column;
-        display: inline;
         
         li {
             margin: 1.5rem 0;
         }
     }
+}
 
-    h2 {
-        font-size: 2rem;
-        font-family: 'Seymour One', sans-serif;
-        margin-top: 0;
-        margin-bottom: 2.5rem;
+h2 {
+    font-size: 2rem;
+    font-family: 'Seymour One', sans-serif;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    }
+a {
+    color: #530A02;
+    text-underline-offset: 4px;
+
+    &:active {
+        color: #C41A00;
+    }
+
+    &:hover {
+        color: #000;
     }
 }
+
 </style>

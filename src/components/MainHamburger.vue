@@ -4,14 +4,7 @@ import { ref } from "vue";
 const menuIsOpen = ref(false);
 
 const emit = defineEmits(['menuClick']);
-// export default {
-//     methods: {
-//         menuOpenClose() {
-//             console.log('clicketi')
-//             menuIsOpen. value = !menuIsOpen.value;
-//         }
-//     } 
-// }
+
 function menuOpenClose() {
     menuIsOpen.value = !menuIsOpen.value;
     console.log(menuIsOpen.value); // NÄR menuisOpen = true, add classlist active to #menuBtn
@@ -46,8 +39,11 @@ button {
     &:hover {
         background-color: #AA1700;
     }
-    &:active, .active {
+    &:active {
         background-color: #530A02;
+    }
+#menuBtn.open {
+    background-color: #530A02;
     }
 }
 </style>
