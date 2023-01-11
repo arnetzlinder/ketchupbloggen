@@ -4,15 +4,15 @@ let recepies: {id: number; name: string; ingredient: string; desc: string; image
       id: 1,
       images: [
         {
-          img: "../../assets/images/Ketchupmarinad-1.webp",
+          img: "/Ketchupmarinad-1.webp",
           alt: "Ketchupmarinadflaska på bakgrund av tomater",
         },
         {
-          img: "../../assets/images/Ketchupmarinad-2.webp",
+          img: "/Ketchupmarinad-2.webp",
           alt: "Ketchupmarinadflaska och skål med tomater",
         },
         {
-          img: "../../assets/images/Ketchupmarinad-3.webp",
+          img: "/Ketchupmarinad-3.webp",
           alt: "Ketchupmarinad i skål",
         }
       ],
@@ -24,15 +24,15 @@ let recepies: {id: number; name: string; ingredient: string; desc: string; image
       id: 2,
       images: [
         {
-          img: "../../assets/images/Ketchupsoppa-1.webp",
+          img: "/Ketchupsoppa-1.webp",
           alt: "Ketchupsoppa i skål med kvistar av timjan",
         },
         {
-          img: "../../assets/images/Ketchupsoppa-2.webp",
+          img: "/Ketchupsoppa-2.webp",
           alt: "Flera skålar med varierande innehåll däribland ketchupssoppa",
         },
         {
-          img: "../../assets/images/Ketchupsoppa-3.webp",
+          img: "/Ketchupsoppa-3.webp",
           alt: "Ketchupsoppa med kvist av bladpersilja",
         }
       ],
@@ -44,15 +44,15 @@ let recepies: {id: number; name: string; ingredient: string; desc: string; image
       id: 3,
       images: [
         {
-          img: "../../assets/images/Gazpacho-1.webp",
+          img: "/Gazpacho-1.webp",
           alt: "Tomat",
         },
         {
-          img: "../../assets/images/Gazpacho-2.webp",
+          img: "/Gazpacho-2.webp",
           alt: "Skål med Gazpacho med gröna kvistar och brödskiva",
         },
         {
-          img: "../../assets/images/Gazpacho-3.webp",
+          img: "/Gazpacho-3.webp",
           alt: "Gazpacho hälls upp i skål från glasflaska",
         }
       ],
