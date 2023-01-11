@@ -7,7 +7,7 @@
 </template>
 
 <style scoped lang="scss">
-@forward '../scss/style.scss';
+@import '../scss/variables.scss';
 
     footer {
         position: absolute;
