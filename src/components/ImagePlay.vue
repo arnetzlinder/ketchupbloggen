@@ -6,7 +6,7 @@
             {{ imageData[0] }}
         </pre>
         <!-- bilder måste ligga i public-mappen för att funka -->
-        <img :src="imageData[0].img1" :alt="imageData[0].alt1" width="300" height="200" loading="lazy" />
+        <img :src="imageData[0].img" :alt="imageData[0].alt" width="300" height="200" loading="lazy" />
         <button> </button>
 
 
