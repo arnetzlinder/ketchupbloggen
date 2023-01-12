@@ -17,6 +17,8 @@
 </script>
 
 <style scoped lang="scss">
+@import '../scss/variables.scss';
+
     nav {
         background-color: #d9d9d990;
         padding: 0;
@@ -42,16 +44,16 @@
 
     h2 {
         font-size: 2rem;
-        font-family: 'Seymour One', sans-serif;
+        font-family: $primaryFont;
         margin-top: 0.5rem;
         margin-bottom: 2rem;
         }
     a {
-        color: #530A02;
+        color: $secondaryColor200;
         text-underline-offset: 4px;
 
         &:active {
-            color: #C41A00;
+            color: $primaryColor200;
         }
 
         &:hover {
