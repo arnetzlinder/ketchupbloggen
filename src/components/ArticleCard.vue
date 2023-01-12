@@ -4,7 +4,7 @@
       <p>{{ cardData }}</p>
       <ImagePlay :image-data="cardData.images" />
   
-      <div v-html="cardData.ingredients">
+      <div v-html="cardData.ingredient">
       </div>
     </div>
   </template>
