@@ -15,10 +15,9 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: [
-    'vue'
+    'vue',
   ],
   rules: {
     'no-console': ['warn', { allow: ['warn', 'error', 'log'] }],
   }
-
 }
