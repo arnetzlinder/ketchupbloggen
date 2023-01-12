@@ -1,5 +1,5 @@
 <template>
-    <button id="menuBtn" @click="menuOpenClose" :class="{ 'open': menuIsOpen }">Meny
+    <button id="menuBtn" @click="menuOpenClose" v-bind:class="{ 'open': menuIsOpen }">Meny
     </button>
 </template>
 
@@ -21,6 +21,10 @@
 
 <style scoped lang="scss">
 @import '../scss/variables.scss';
+button.open {
+    background-color: $secondaryColor200;
+    }
+
 button {
     background-color: $primaryColor200;
     color: $primaryColor100;
@@ -43,9 +47,9 @@ button {
     &:active {
         background-color: $secondaryColor200;
     }
-button.open {
-    background-color: $secondaryColor200;
-    }
 }
 </style>
+
+
+
 
