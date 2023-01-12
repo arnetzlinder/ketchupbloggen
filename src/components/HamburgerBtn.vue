@@ -1,28 +1,23 @@
-<script setup lang="ts">
-import { ref } from "vue";
-
-const menuIsOpen = ref(false);
-
-const emit = defineEmits(['menuClick']);
-
-function menuOpenClose() {
-    menuIsOpen.value = !menuIsOpen.value;
-    console.log(menuIsOpen.value); // NÄR menuisOpen = true, add classlist active to #menuBtn
-
-    // if(menuIsOpen.value === true) {
-    //     menuIsOpen.value = false;
-    // } else {
-    //     menuIsOpen.value = true;
-    // }
-
-    emit('menuClick', menuIsOpen.value);
-}
-</script> 
-
 <template>
     <button id="menuBtn" @click="menuOpenClose">Meny
     </button>
 </template>
+
+<script lang="ts">
+    export default {
+        data() {
+            return {
+                menuIsOpen: false,
+            }
+        },
+        methods: {
+            menuOpenClose() {
+                this.menuIsOpen = !this.menuIsOpen;
+                this.$emit('menuClick', this.menuIsOpen);
+            }
+        }
+    }
+ </script> 
 
 <style scoped lang="scss">
 button {

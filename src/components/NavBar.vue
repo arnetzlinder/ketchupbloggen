@@ -1,29 +1,30 @@
-<script setup lang="ts">
-import { ref } from 'vue';
-import MainHamburger from './MainHamburger.vue';
-
-const showMenu = ref(false);
-
-function toggleMenu(isMenuOpen:boolean):void { //här behöver jag lite hjälp med felmeddelandet?
-    showMenu.value = isMenuOpen;
-}
-</script>
-
 <template>
-    <section> <!--TILLFÄLLIG platshållare -->
-        <MainHamburger @menu-click="toggleMenu"/>
-        [Searchbar leta recept osv] [ikon]  
-        <nav>
-            <ul v-if="showMenu">
-                <h2>Meny</h2>
-                <li><a href="#">Historia</a></li>
-                <li><a href="#">Förrätter</a></li>
-                <li><a href="#">Huvudrätter</a></li>
-                <li><a href="#">Efterrätter</a></li>
-            </ul>
-        </nav> 
-    </section>
+    <HamburgerBtn  @menu-click="toggleMenu"/>
+    <MainMenu :is-open="showMenu"/>
 </template>
+
+<script lang="ts">
+import HamburgerBtn from './HamburgerBtn.vue';
+import MainMenu from './MainMenu.vue';
+export default {
+    components: {
+        HamburgerBtn,
+        MainMenu,
+    },
+    data() {
+        return {
+            showMenu: false,
+        }
+    },
+    methods: {
+        toggleMenu() {
+            console.log('click');
+            this.showMenu = !this.showMenu;
+        }
+    }
+}
+// Options API
+</script>
 
 <style scoped lang="scss">
 
