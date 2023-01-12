@@ -29,6 +29,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import '../scss/variables';
 
     div {
         position: fixed;
@@ -38,14 +39,27 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: yellow;
+        background-color: $primaryColor300;
 
         p {
-            margin-inline-start: 2rem;
+            margin-inline-start: 1.5rem;
+            color: $primaryColor100;
         }
 
         button {
-            margin-inline-end: 2rem;
+            border: none;
+            margin-inline-end: 1rem;
+            width: 5.875rem;
+            border: 1px solid black;
+            border-radius: .625rem;
+            background-color: $secondaryColor100;
+            font-size: .875rem;
+            line-height: 1.0625rem;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
         }
     }
 
