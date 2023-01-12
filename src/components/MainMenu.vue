@@ -1,18 +1,32 @@
 <template>
     <nav :class="{'hidden': !isOpen}">
-        <ul v-if="isOpen">
+        <ul v-if="isOpen || minWidth">
             <h2>Meny</h2>
             <li><a href="#">Historia</a></li>
             <li><a href="#">Förrätter</a></li>
             <li><a href="#">Huvudrätter</a></li>
             <li><a href="#">Efterrätter</a></li>
         </ul>
-    </nav> 
+    </nav>
 </template>
 
 <script lang='ts'>
     export default {
+        data() {
+            return {
+                minWidth: false,
+            }
+        },
         props: ['isOpen'],
+        mounted() {
+    this.minWidth = window.innerWidth >= 1440
+    window.addEventListener('resize', this.checkWidth)
+},
+methods: {
+    checkWidth() {
+        this.minWidth = window.innerWidth >= 1440
+    }
+}
     }
 </script>
 
@@ -86,5 +100,26 @@
         h2 {
         margin-bottom: 3rem;
         }
+    }
+    @media (min-width: 1440px) {
+        nav {
+        background-color:$primaryColor100;
+        outline: none;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        margin-left: 8px;
+       
+
+        ul {
+         display: block;
+        display: flex;
+        flex-direction: row;
+        }
+
+        h2 {
+            visibility: hidden;
+        }
+    }
     }
 </style>
