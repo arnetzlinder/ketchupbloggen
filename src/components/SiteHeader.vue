@@ -8,18 +8,18 @@
 </template>
 
 <style scoped lang="scss">
-@forward '../scss/style.scss';
+@import '../scss/style.scss';
 
-@media screen and (min-width: 360px) {
-    header{  
+header{
     position: relative;
-
-    font-family: 'Seymour One', sans-serif;
-    height: 195px;
-    color: #FFF3D0;
-    background-image: url('../../assets/images/KetchupbloggenHeaderImg-Mobile.webp');
+    font-family: $primaryFont;
     background-size: cover;
     background-repeat: no-repeat;
+    color: $primaryColor100;
+    background-image: url('/KetchupbloggenHeaderImg-DesktopLarge.webp');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .bg-filter{
         top: 0;
         position: absolute;
@@ -28,6 +28,12 @@
         z-index: 2;
         background: linear-gradient(to left, rgba(83, 10, 2, 0) 0%,rgba(83, 10, 2, 0.688) 100%);
     }
+}
+
+@media screen and (min-width: 360px) {
+    header{  
+    height: 195px;
+    background-image: url('/KetchupbloggenHeaderImg-Mobile.webp');
         .h1-container{
             position: relative;
             z-index: 3;
@@ -39,16 +45,12 @@
         }
     }
 
-
 }
     }
     @media screen and (min-width: 744px) {
     header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         height: 322px;
-        background-image: url('../../assets/images/KetchupbloggenHeaderImg-Tablet.webp');
+        background-image: url('/KetchupbloggenHeaderImg-Tablet.webp');
             .h1-container{
                 padding: 20px;
                 width: 550px;
@@ -62,7 +64,7 @@
     @media screen and (min-width: 1440px) {
     header{
         height: 436px;
-        background-image: url('../../assets/images/KetchupbloggenHeaderImg-Desktop.webp');
+        background-image: url('/KetchupbloggenHeaderImg-Desktop.webp');
             .h1-container{
                 width: 700px;
                 padding: 34px;
