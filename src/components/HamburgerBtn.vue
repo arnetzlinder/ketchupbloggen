@@ -1,5 +1,5 @@
 <template>
-    <button id="menuBtn" @click="menuOpenClose" v-bind:class="{ 'open': menuIsOpen }">Meny
+    <button id="menuBtn" @click="menuOpenClose" v-bind:class="{ 'open': menuIsOpen }">Meny <!--går även att använda :class="{ 'open': menuIsOpen }-->
     </button>
 </template>
 
@@ -48,6 +48,11 @@ button {
         background-color: $secondaryColor200;
     }
 }
+@media screen and (min-width: 1440px) {
+        button {
+            visibility: hidden;
+        }
+    }
 </style>
 
 
