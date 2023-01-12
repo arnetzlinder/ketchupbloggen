@@ -1,33 +1,30 @@
 <template>
-    <section>
-        <nav>
-            <ul v-if="isOpen">
-                <h2>Meny</h2>
-                <li><a href="#">Historia</a></li>
-                <li><a href="#">Förrätter</a></li>
-                <li><a href="#">Huvudrätter</a></li>
-                <li><a href="#">Efterrätter</a></li>
-            </ul>
-        </nav> 
-    </section>
+    <nav>
+        <ul v-if="isOpen">
+            <h2>Meny</h2>
+            <li><a href="#">Historia</a></li>
+            <li><a href="#">Förrätter</a></li>
+            <li><a href="#">Huvudrätter</a></li>
+            <li><a href="#">Efterrätter</a></li>
+        </ul>
+    </nav> 
 </template>
 
 <script lang='ts'>
     export default {
         props: ['isOpen'],
     }
-    // Options API
 </script>
 
 <style scoped lang="scss">
-section {
-    background-color: white;
-    position: absolute;
-    width: 100%;
-    height: 40px;
-    padding: 5px 0 0 8px;
-    margin: 0;
-}
+// section { //denna CSS ska in på hela nav-elementet ist
+//     background-color: white;
+//     position: absolute;
+//     width: 100%;
+//     height: 40px;
+//     padding: 5px 0 0 8px;
+//     margin: 0;
+// }
 
 nav {
     background-color: #d9d9d990;

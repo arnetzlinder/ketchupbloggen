@@ -23,7 +23,6 @@ export default {
         }
     }
 }
-// Options API
 </script>
 
 <style scoped lang="scss">

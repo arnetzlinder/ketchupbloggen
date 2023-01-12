@@ -14,6 +14,7 @@
             menuOpenClose() {
                 this.menuIsOpen = !this.menuIsOpen;
                 this.$emit('menuClick', this.menuIsOpen);
+                // NÄR meny är öppen, addera CSSklass open på Btn.
             }
         }
     }
