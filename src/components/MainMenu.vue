@@ -17,16 +17,14 @@
 </script>
 
 <style scoped lang="scss">
-
-
     nav {
         background-color: #d9d9d990;
         padding: 0;
-        width: 70%;
+        width: 375px;
         height: auto;
         outline: 1px solid #5A5A5A;
         border-radius: 8px;
-        margin: 5px 0;
+        margin-left: 8px;
 
         ul {
             padding: 0;

@@ -34,6 +34,7 @@ button {
     align-items: center;
     text-align: center;
     display: inline;
+    margin: 5px 0 0 8px;
 
     &:hover {
         background-color: #AA1700;
@@ -41,7 +42,7 @@ button {
     &:active {
         background-color: #530A02;
     }
-#menuBtn.open {
+button.open {
     background-color: #530A02;
     }
 }
