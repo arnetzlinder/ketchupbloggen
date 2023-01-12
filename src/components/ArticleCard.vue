@@ -1,11 +1,12 @@
 <template>
     <div>
       <h2>ArticleCard.vue</h2>
-      <p>{{ cardData }}</p>
+      <!-- <p>{{ cardData }}</p> -->
       <ImagePlay :image-data="cardData.images" />
   
       <div v-html="cardData.ingredient">
       </div>
+      <div v-html="cardData.desc"></div>
     </div>
   </template>
   
