@@ -8,7 +8,7 @@
 </template>
 
 <style scoped lang="scss">
-@forward '../scss/style.scss';
+@import '../scss/style.scss';
 
 @media screen and (min-width: 360px) {
     header{  
@@ -17,7 +17,7 @@
     font-family: 'Seymour One', sans-serif;
     height: 195px;
     color: #FFF3D0;
-    background-image: url('../../assets/images/KetchupbloggenHeaderImg-Mobile.webp');
+    background-image: url('/KetchupbloggenHeaderImg-Mobile.webp');
     background-size: cover;
     background-repeat: no-repeat;
     .bg-filter{
@@ -48,7 +48,7 @@
         flex-direction: column;
         justify-content: center;
         height: 322px;
-        background-image: url('../../assets/images/KetchupbloggenHeaderImg-Tablet.webp');
+        background-image: url('/KetchupbloggenHeaderImg-Tablet.webp');
             .h1-container{
                 padding: 20px;
                 width: 550px;
@@ -62,7 +62,7 @@
     @media screen and (min-width: 1440px) {
     header{
         height: 436px;
-        background-image: url('../../assets/images/KetchupbloggenHeaderImg-Desktop.webp');
+        background-image: url('/KetchupbloggenHeaderImg-Desktop.webp');
             .h1-container{
                 width: 700px;
                 padding: 34px;
