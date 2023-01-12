@@ -1,5 +1,5 @@
 <template>
-    <nav>
+    <nav :class="{'hidden': !isOpen}">
         <ul v-if="isOpen">
             <h2>Meny</h2>
             <li><a href="#">Historia</a></li>
@@ -19,7 +19,12 @@
 <style scoped lang="scss">
 @import '../scss/variables.scss';
 
+    nav.hidden {
+            outline: none;
+        }
+
     nav {
+        box-sizing: border-box;
         background-color: #d9d9d990;
         padding: 0;
         width: 375px;
