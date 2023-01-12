@@ -20,14 +20,14 @@
 @import '../scss/variables.scss';
 
     nav.hidden {
-            outline: none;
+        outline: none;
         }
 
     nav {
         box-sizing: border-box;
         background-color: #d9d9d990;
         padding: 0;
-        width: 375px;
+        width: 275px;
         height: auto;
         outline: 1px solid #5A5A5A;
         border-radius: 8px;
@@ -42,7 +42,11 @@
             margin: 0;
             
             li {
-                margin: 1.5rem 0;
+                margin: 1rem 0;
+            }
+
+            li:last-child {
+            margin-bottom: 5rem;
             }
         }
     }
@@ -53,6 +57,7 @@
         margin-top: 0.5rem;
         margin-bottom: 2rem;
         }
+
     a {
         color: $secondaryColor200;
         text-underline-offset: 4px;
@@ -63,6 +68,23 @@
 
         &:hover {
             color: #000;
+        }
+    }
+    @media screen and (min-width: 744px) {
+        nav {
+        width: 375px;
+
+        li {
+            margin: 2rem 0;
+        }
+
+        li:last-child {
+            padding-bottom: 6rem;
+            }
+        }
+
+        h2 {
+        margin-bottom: 3rem;
         }
     }
 </style>

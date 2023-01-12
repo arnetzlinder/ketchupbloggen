@@ -1,5 +1,5 @@
 <template>
-    <button id="menuBtn" @click="menuOpenClose" v-bind:class="{ 'open': menuIsOpen }">Meny <!--går även att använda :class="{ 'open': menuIsOpen }-->
+    <button id="menuBtn" @click="menuOpenClose" :class="{ 'open': menuIsOpen }">Meny <!--samma som v-bind:class="{ 'open': menuIsOpen }"-->
     </button>
 </template>
 
