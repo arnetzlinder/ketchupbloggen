@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import SiteHeader from './components/SiteHeader.vue';
 import FooterSection from './components/FooterSection.vue';
-
-import recepies from './components/array.ts';
+import ArticleCard from './components/ArticleCard.vue';
+import recepies from './components/array';
 </script>
 
 <template>
