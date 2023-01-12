@@ -19,8 +19,8 @@
         },
         props: ['isOpen'],
         mounted() {
-    this.minWidth = window.innerWidth >= 1440
-    window.addEventListener('resize', this.checkWidth)
+        this.minWidth = window.innerWidth >= 1440;
+        window.addEventListener('resize', this.checkWidth);
 },
 methods: {
     checkWidth() {
@@ -86,40 +86,45 @@ methods: {
     }
     @media screen and (min-width: 744px) {
         nav {
-        width: 375px;
+            width: 375px;
 
-        li {
-            margin: 2rem 0;
-        }
+            li {
+                margin: 2rem 0;
+            }
 
-        li:last-child {
-            padding-bottom: 6rem;
+            li:last-child {
+                padding-bottom: 6rem;
             }
         }
 
         h2 {
-        margin-bottom: 3rem;
+            margin-bottom: 3rem;
         }
     }
     @media (min-width: 1440px) {
         nav {
-        background-color:$primaryColor100;
-        outline: none;
-        padding: 0;
-        width: 100%;
-        height: auto;
-        margin-left: 8px;
+            background-color:$primaryColor100;
+            outline: none;
+            padding: 0;
+            width: 100%;
+            height: auto;
+            margin-left: 8px;
        
+            ul {
+                display: block;
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                top: 450px;
 
-        ul {
-         display: block;
-        display: flex;
-        flex-direction: row;
-        }
+                li {
+                    margin: 0 2.5rem;
+                    }
+                }
 
-        h2 {
-            visibility: hidden;
+            h2 {
+                display: none;
+            }
         }
-    }
     }
 </style>
