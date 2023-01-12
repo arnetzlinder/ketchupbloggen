@@ -7,19 +7,22 @@
 </template>
 
 <style scoped lang="scss">
-@forward '../scss/style.scss';
+@import '../scss/variables.scss';
 
     footer {
         position: absolute;
         bottom: 0;
         width: 100vw;
-        padding-inline-start: 1rem;
         background-color: #dad0b2;
+
+        p {
+            padding-inline-start: 1rem;
+        }
 
     }
 
     @media screen and (min-width: 1440px) {
-        footer {
+        p {
             padding-inline-start: 2rem;
         }
     }
