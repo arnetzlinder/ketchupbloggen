@@ -17,8 +17,8 @@ let recepies: {id: number; name: string; ingredient: string; desc: string; image
         }
       ],
       name: "Ketchupmarinad",
-      ingredient: "",
-      desc: "",
+      ingredient: "<ul><li>1 dl rapssolja</li><li>1 dl ketchup</li><li>1/2 dl soja</li><li>2 msk grillkrydda</li><li>1 st pressad vitlöksklyfta</li><li>Citronsaft från en halv citron</li><li>Vitpeppar</li></ul>",
+      desc: "1. Blanda ihop alla ingredienser till marinaden.",
     },
     {
       id: 2,
@@ -57,8 +57,8 @@ let recepies: {id: number; name: string; ingredient: string; desc: string; image
             }
           ],
           name: "Gazpacho",
-          ingredient: "",
-          desc: "",
+          ingredient: "<ul><li>3 msk rödvinsvinäger</li><li>3 msk olivolja</li><li>1/2 dl ketchup</li><li>salt</li><li>svartpeppar</li><li>2 frp krossade tomater</li><li>2 st paprika, röd</li><li>1 st gurka</li><li>1/2 st rödlök</li><li>1/2 st vitlöksklyfta</li><li>2 dl vatten</li><li>1/2 st röd chilipeppar</li></ul>",
+          desc: "1. Vispa ihop vinäger, olja, ketchup, salt och peppar i en stor skål.<br>2. Smaksätt med salt och peppar.<br>3. Vänd ner alla grönsakerna inklusive tomaterna och låt dra någon minut.<br>4. Mixa grönsaksblandningen och späd med vatten till önskad konsistens.<br>5. Smaksätt med salt och peppar.<br>6. Servera den med några droppar olivolja och krutonger.",
         },
       ];
   export default recepies;
