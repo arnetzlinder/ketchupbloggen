@@ -1,5 +1,5 @@
 <template>
-    <button id="menuBtn" @click="menuOpenClose">Meny
+    <button id="menuBtn" @click="menuOpenClose" :class="{ 'open': menuIsOpen }">Meny
     </button>
 </template>
 
@@ -48,3 +48,4 @@ button.open {
     }
 }
 </style>
+
