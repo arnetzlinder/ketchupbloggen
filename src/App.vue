@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import SiteHeader from './components/SiteHeader.vue';
 import FooterSection from './components/FooterSection.vue';
-import ArticleCard from './components/ArticleCard.vue';import MainNavBar from './components/MainNavBar.vue';
+import ArticleCard from './components/ArticleCard.vue';
+import MainNavBar from './components/MainNavBar.vue';
 
 import recepies from './components/array';
 </script>
