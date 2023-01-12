@@ -35,7 +35,7 @@ methods: {
 
     nav.hidden {
         outline: none;
-        }
+    }
 
     nav {
         box-sizing: border-box;
@@ -101,7 +101,7 @@ methods: {
             margin-bottom: 3rem;
         }
     }
-    @media (min-width: 1440px) {
+    @media screen and (min-width: 1440px) {
         nav {
             background-color:$primaryColor100;
             outline: none;
