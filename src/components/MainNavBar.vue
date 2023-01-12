@@ -33,6 +33,7 @@ section {
     width: 100%;
     height: 40px;
     padding: 5px 0 0 8px;
+    margin: 0;
 }
 
 nav {
@@ -40,7 +41,7 @@ nav {
     padding: 0;
     width: 70%;
     height: auto;
-    border: 1px solid #5A5A5A;
+    outline: 1px solid #5A5A5A;
     border-radius: 8px;
     margin: 5px 0;
 
@@ -51,6 +52,7 @@ nav {
         text-align: center;
         display: flex;
         flex-direction: column;
+        margin: 0;
         
         li {
             margin: 1.5rem 0;
@@ -61,8 +63,8 @@ nav {
 h2 {
     font-size: 2rem;
     font-family: 'Seymour One', sans-serif;
-    margin-top: 0;
-    margin-bottom: 2.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
     }
 a {
     color: #530A02;

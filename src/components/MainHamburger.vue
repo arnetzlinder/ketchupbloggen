@@ -9,9 +9,15 @@ function menuOpenClose() {
     menuIsOpen.value = !menuIsOpen.value;
     console.log(menuIsOpen.value); // NÄR menuisOpen = true, add classlist active to #menuBtn
 
+    // if(menuIsOpen.value === true) {
+    //     menuIsOpen.value = false;
+    // } else {
+    //     menuIsOpen.value = true;
+    // }
+
     emit('menuClick', menuIsOpen.value);
 }
-</script>
+</script> 
 
 <template>
     <button id="menuBtn" @click="menuOpenClose">Meny
@@ -19,7 +25,6 @@ function menuOpenClose() {
 </template>
 
 <style scoped lang="scss">
-
 button {
     background-color: #C41A00;
     color: #FFF3D0;
@@ -34,7 +39,6 @@ button {
     align-items: center;
     text-align: center;
     display: inline;
-    z-index: 10;
 
     &:hover {
         background-color: #AA1700;
