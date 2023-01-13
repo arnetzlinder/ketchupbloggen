@@ -1,11 +1,12 @@
 <template>
     <div class="article-card">
-      <h2>ArticleCard.vue</h2>
-      <!-- <p>{{ cardData }}</p> -->
+      <h2 v-html="cardData.name"> </h2>
+      <!-- <p> {{ cardData }} </p> -->
       <ImagePlay :image-data="cardData.images" />
   
-      <div v-html="cardData.ingress">
+      <div v-html="cardData.figcaption" class="figcaption">
       </div>
+      <button>Läs mer</button>
     </div>
   </template>
   
@@ -22,5 +23,9 @@
         height: 330px;
         background-color: $secondaryColor300;
         color: $primaryColor100;
+        font-family: $primaryFont;
+        .figcaption {
+          font-family: $secondaryFont;
+        }
     }
 </style>
