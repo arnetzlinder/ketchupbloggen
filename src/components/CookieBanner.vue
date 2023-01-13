@@ -65,16 +65,21 @@ export default {
     }
 
     @media screen and (min-width: 740px) {
-        button {
+        div {
+            button {
             width: 7.1875rem;
-            background-color: black;
+            }
         }
+      
     }
 
     @media screen and (min-width: 1440px) {
-        p {
+        div {
+            p {
             margin-inline-start: 28.625rem;
+            } 
         }
+       
     }
 
 </style>
