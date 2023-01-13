@@ -1,4 +1,4 @@
-let recepies: {id: number; name: string; ingredient: string; desc: string; images: {img: string; alt: string;}[] } [] = [
+let recepies: {id: number; ingress: string; name: string; ingredient: string; desc: string; images: {img: string; alt: string;}[] } [] = [
     //Array which stores all info about the recepies, e.g. name
     {
       id: 1,
