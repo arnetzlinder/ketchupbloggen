@@ -1,18 +1,12 @@
 <template>
     <div>
-        <button @click="imageBackward" class="material-symbols-outlined">
-        arrow_back
-        </button>
-
-        <!-- <pre>
-            {{ imageData[0] }}
-        </pre> -->
-
+        <button @click="imageBackward" class="material-symbols-outlined backward">arrow_back</button>
         <img :src="imageData[currentIndex].img" :alt="imageData[currentIndex].alt" width="236" height="153" loading="lazy" />
+        <button @click="imageForward" class="material-symbols-outlined forward">arrow_forward</button>
 
-        <button @click="imageForward" class="material-symbols-outlined">
-        arrow_forward 
-        </button>
+        <div class="dots">
+            <div v-for="(dot, index) in imageData" :key="index" :class="{ active: currentIndex === index }"></div>
+        </div>
     </div>
 </template>
 
@@ -42,7 +36,7 @@ export default {
             }
         },
     },
-}
+};
 
 
 // const props = defineProps(['imageData']);
@@ -50,5 +44,35 @@ export default {
 
 </script>
 
-<style lang="sass" scoped>
+<style scoped lang="scss">
+@import '../scss/variables.scss';
+
+    button {
+        background-color: none;
+        outline: none;
+    }
+
+    img {
+        border-radius: 10px;
+        border: 2px solid $primaryColor100;
+        margin-bottom: 1rem;
+    }
+
+    .dots {
+    display: flex;
+    justify-content: center;
+    }
+
+    .dots > div {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0 5px;
+        background-color: #ccc;
+    }
+
+    .dots > div.active {
+        background-color: #333;
+    }
+
 </style>
