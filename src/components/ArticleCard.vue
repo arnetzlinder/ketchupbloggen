@@ -28,7 +28,7 @@
         display: flex;
         flex-direction: column;
         justify-items: center;
-        padding: 0.5rem;
+        padding: 1rem;
         margin: 10px 0;
       
       h2 {
@@ -51,6 +51,7 @@
         margin-left: auto;
         border-radius: 10px;
         border: 1px solid black;
+        
 
 
         &:hover {
@@ -59,6 +60,10 @@
 
         &:active {
           background-color: $secondaryColor200;
+        }
+
+        &:disabled {
+          background-color: #939191;
         }
       }
     }
