@@ -1,10 +1,11 @@
+import ketchupmarinad1 from "/public/ketchupmarinad-1.webp"
 let recepies: {id: number; ingress: string; name: string; ingredient: string; desc: string; images: {img: string; alt: string;}[] } [] = [
     //Array which stores all info about the recepies, e.g. name
     {
       id: 1,
       images: [
         {
-          img: "/ketchupmarinad-1.webp",
+          img: ketchupmarinad1,
           alt: "Ketchupmarinadflaska på bakgrund av tomater",
         },
         {
