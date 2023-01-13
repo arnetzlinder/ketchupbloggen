@@ -18,7 +18,7 @@
             }
         },
         props: ['isOpen'],
-        mounted() { // mounted() funktion som anropas efter att komponenten har lagts till i DOM, kontrollerar här koden i huvudsak bredden på webbläsarfönstret vid sidladdning och även varje gång fönstret ändras.
+        mounted() { // mounted() funktion som anropas efter att komponenten har lagts till i DOM, kontrollerar här koden bredden på webbläsarfönstret vid sidladdning och även varje gång fönstret ändras.
             this.minWidth = window.innerWidth >= 1440; 
             window.addEventListener('resize', this.checkWidth);
         },
@@ -58,7 +58,7 @@
             margin: 0;
             
             li {
-                margin: 1rem 0;
+            margin: 1rem 0;
             }
 
             li:last-child {

@@ -23,22 +23,22 @@ export default {
     props: ['imageData'],
     data() {
         return {
-            currentIndex: 0,
+            currentIndex: 0, // variabel hålla reda på vart vi är i bildspelet
         };
     },
     methods:{
         imageForward() {
-            if (this.currentIndex + 1 > this.imageData.length - 1) {
-                this.currentIndex = 0;
+            if (this.currentIndex + 1 > this.imageData.length - 1) { // om vi går till höger och det blir mer än så många bilder vi har i arrayen
+                this.currentIndex = 0; // då startar vi om vårt bildspel
             } else {
-                this.currentIndex += 1;
+                this.currentIndex += 1; // i annat fall stega 1 steg framåt
             }
         },
         imageBackward() {
             if (this.currentIndex - 1 < 0) {
                 this.currentIndex = this.imageData.length - 1;
             } else {
-                this.currentIndex -= 1;
+                this.currentIndex -= 1; 
             }
         },
     },
