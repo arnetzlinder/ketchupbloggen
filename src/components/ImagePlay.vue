@@ -2,9 +2,9 @@
     <div>
         <h2>ImagePlay.vue</h2>
         <button> </button>
-        <pre>
+        <!-- <pre>
             {{ imageData[0] }}
-        </pre>
+        </pre> -->
         <!-- bilder måste ligga i public-mappen för att funka -->
         <img :src="imageData[0].img" :alt="imageData[0].alt" width="300" height="200" loading="lazy" />
         <button> </button>
