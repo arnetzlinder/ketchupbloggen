@@ -39,13 +39,15 @@
 
     nav {
         box-sizing: border-box;
-        background-color: #d9d9d990;
+        background-color: #d9d9d9;
         padding: 0;
         width: 275px;
         height: auto;
         outline: 1px solid #5A5A5A;
         border-radius: 8px;
         margin-left: 8px;
+        position: absolute;
+        z-index: 10;
 
         ul {
             padding: 0;
@@ -115,7 +117,7 @@
                 display: flex;
                 flex-direction: row;
                 position: absolute;
-                top: 450px;
+                top:-25px;
 
                 li {
                     margin: 0 2.5rem;
