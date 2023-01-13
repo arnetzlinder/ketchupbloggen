@@ -8,11 +8,11 @@ let recepies: {id: number; name: string; ingredient: string; desc: string; image
           alt: "Ketchupmarinadflaska på bakgrund av tomater",
         },
         {
-          img: "/Ketchupmarinad-2.webp",
+          img: "/ketchupmarinad-2.webp",
           alt: "Ketchupmarinadflaska och skål med tomater",
         },
         {
-          img: "/Ketchupmarinad-3.webp",
+          img: "/ketchupmarinad-3.webp",
           alt: "Ketchupmarinad i skål",
         }
       ],
