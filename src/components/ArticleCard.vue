@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="article-card">
       <h2>ArticleCard.vue</h2>
       <!-- <p>{{ cardData }}</p> -->
       <ImagePlay :image-data="cardData.images" />
@@ -15,3 +15,13 @@
   const props = defineProps(['cardData']);
   console.log(props);
   </script>
+
+  <style lang="scss">
+  @import '../scss/variables.scss';
+    .article-card {
+        width: 360px;
+        height: 330px;
+        background-color: $secondaryColor300;
+        color: $primaryColor100;
+    }
+</style>
