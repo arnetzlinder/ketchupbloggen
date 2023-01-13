@@ -4,9 +4,8 @@
       <!-- <p>{{ cardData }}</p> -->
       <ImagePlay :image-data="cardData.images" />
   
-      <div v-html="cardData.ingredient">
+      <div v-html="cardData.ingress">
       </div>
-      <div v-html="cardData.desc"></div>
     </div>
   </template>
   
