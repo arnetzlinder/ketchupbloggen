@@ -4,7 +4,7 @@ let recepies: {id: number; ingress: string; name: string; ingredient: string; de
       id: 1,
       images: [
         {
-          img: "/Ketchupmarinad-1.webp",
+          img: "/ketchupmarinad-1.webp",
           alt: "Ketchupmarinadflaska på bakgrund av tomater",
         },
         {
