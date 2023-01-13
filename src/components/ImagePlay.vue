@@ -4,8 +4,18 @@
         <img :src="imageData[currentIndex].img" :alt="imageData[currentIndex].alt" width="236" height="153" loading="lazy" />
         <button @click="imageForward" class="material-symbols-outlined forward">arrow_forward</button>
 
-        <div class="dots">
-            <div v-for="(dot, index) in imageData" :key="index" :class="{ active: currentIndex === index }"></div>
+        <div class="dots"> <!--loopar igenom [imageData],och skapar ett nytt div-element för varje element , addera klass active NÄR aktuellt index matchar variabeln currentIndex -->
+            <div v-for="(item, index) in imageData" :key="index" :class="{ active: currentIndex === index }"></div>
+
+            <!-- samma som:
+                for (let i = 0; i < imageData.length; i++) {
+                const item = imageData[i];
+                const div = document.createElement('div');
+                div.classList.add(currentIndex === i ? 'active' : '');
+                div.setAttribute('key', i);
+            måste sätta key så Vue vet vad den ska hålla koll på. 
+            https://vuejs.org/guide/essentials/list.html-->
+
         </div>
     </div>
 </template>
@@ -63,16 +73,19 @@ export default {
     justify-content: center;
     }
 
-    .dots > div {
+    .dots div {
         width: 10px;
         height: 10px;
         border-radius: 50%;
         margin: 0 5px;
-        background-color: #ccc;
+        background-color: #D9D9D9;
+        box-shadow: 1px 1px 5px #333;
+        position: relative;
+        top: -40px;
     }
 
-    .dots > div.active {
-        background-color: #333;
+    .dots div.active {
+        background-color: $secondaryColor200;
     }
 
 </style>
