@@ -27,15 +27,15 @@ let recepies: {id: number; ingress: string; name: string; ingredient: string; de
       id: 2,
       images: [
         {
-          img: "/Ketchupsoppa-1.webp",
+          img: "./ketchupsoppa1.webp",
           alt: "Ketchupsoppa i skål med kvistar av timjan",
         },
         {
-          img: "/Ketchupsoppa-2.webp",
+          img: "./ketchupsoppa2.webp",
           alt: "Flera skålar med varierande innehåll däribland ketchupssoppa",
         },
         {
-          img: "/Ketchupsoppa-3.webp",
+          img: "./ketchupsoppa3.webp",
           alt: "Ketchupsoppa med kvist av bladpersilja",
         }
       ],
@@ -48,15 +48,15 @@ let recepies: {id: number; ingress: string; name: string; ingredient: string; de
           id: 3,
           images: [
             {
-              img: "/Gazpacho-1.webp",
+              img: "./gazpacho1.webp",
               alt: "Tomat",
             },
             {
-              img: "/Gazpacho-2.webp",
+              img: "./gazpacho2.webp",
               alt: "Skål med Gazpacho med gröna kvistar och brödskiva",
             },
             {
-              img: "/Gazpacho-3.webp",
+              img: "./gazpacho3.webp",
               alt: "Gazpacho hälls upp i skål från glasflaska",
             }
           ],
