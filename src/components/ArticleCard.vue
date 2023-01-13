@@ -7,7 +7,7 @@
       </div>
       <div v-html="cardData.figcaption" class="figcaption">
       </div>
-      <button>Läs mer</button>
+      <button>Visa Recept</button>
     </div>
   </template>
   
@@ -28,11 +28,11 @@
         display: flex;
         flex-direction: column;
         justify-items: center;
-        margin-bottom: 10px;
+        padding: 0.5rem;
+        margin: 10px 0;
       
       h2 {
         text-align: center;
-        padding-top: 1rem;
       }
       .imageplay {
         margin: auto;
@@ -42,9 +42,24 @@
       }
 
       button {
+        background-color: $primaryColor200;
+        color: $primaryColor100;
+        font-family: $secondaryFont;
+        font-size: 0.875rem; // ta oss friheten att ändra till font size 15 pga acc standard?
         width: 120px;
         height: 35px;
         margin-left: auto;
+        border-radius: 10px;
+        border: 1px solid black;
+
+
+        &:hover {
+          background-color: #AA1700;
+        }
+
+        &:active {
+          background-color: $secondaryColor200;
+        }
       }
     }
 </style>
