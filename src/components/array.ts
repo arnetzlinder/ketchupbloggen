@@ -39,7 +39,7 @@ let recepies: {id: number; figcaption: string; name: string; ingredient: string;
             }
           ],
           name: "Ketchupmarinad",
-          figcaption: "test",
+          figcaption: "Marinaden som klår alla andra när du ska grilla kött och kyckling. En succé på grillpartyt!",
           ingredient: "<ul><li>1 dl rapssolja</li><li>1 dl ketchup</li><li>1/2 dl soja</li><li>2 msk grillkrydda</li><li>1 st pressad vitlöksklyfta</li><li>Citronsaft från en halv citron</li><li>Vitpeppar</li></ul>",
           desc: "1. Blanda ihop alla ingredienser till marinaden.",
         },
@@ -60,7 +60,7 @@ let recepies: {id: number; figcaption: string; name: string; ingredient: string;
             }
           ],
           name: "Gazpacho",
-          figcaption: "test",
+          figcaption: "När det är för varmt för varma maträtter så är en krämig gazpacho previs vad som behövs för att svalka och mätta. Klicka in här för recept!",
           ingredient: "<ul><li>3 msk rödvinsvinäger</li><li>3 msk olivolja</li><li>1/2 dl ketchup</li><li>salt</li><li>svartpeppar</li><li>2 frp krossade tomater</li><li>2 st paprika, röd</li><li>1 st gurka</li><li>1/2 st rödlök</li><li>1/2 st vitlöksklyfta</li><li>2 dl vatten</li><li>1/2 st röd chilipeppar</li></ul>",
           desc: "1. Vispa ihop vinäger, olja, ketchup, salt och peppar i en stor skål.<br>2. Smaksätt med salt och peppar.<br>3. Vänd ner alla grönsakerna inklusive tomaterna och låt dra någon minut.<br>4. Mixa grönsaksblandningen och späd med vatten till önskad konsistens.<br>5. Smaksätt med salt och peppar.<br>6. Servera den med några droppar olivolja och krutonger.",
         },
