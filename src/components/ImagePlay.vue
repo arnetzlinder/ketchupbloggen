@@ -58,8 +58,21 @@ export default {
 @import '../scss/variables.scss';
 
     button {
-        background-color: none;
-        outline: none;
+        background-color: transparent;
+        color: #DAD0B2;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        position: relative;
+        top: -80px;
+    }
+
+    .backward {
+        left: 30px;
+    }
+
+    .forward {
+        right: 30px;
     }
 
     img {
