@@ -6,15 +6,15 @@ let recepies: {id: number; ingress: string; name: string; ingredient: string; de
       images: [
         {
 
-          img: "/ketchupmarinad1.webp",
+          img: "./ketchupmarinad1.webp",
           alt: "Ketchupmarinadflaska på bakgrund av tomater",
         },
         {
-          img: "/ketchupmarinad2.webp",
+          img: "./ketchupmarinad2.webp",
           alt: "Ketchupmarinadflaska och skål med tomater",
         },
         {
-          img: "/ketchupmarinad3.webp",
+          img: "./ketchupmarinad3.webp",
           alt: "Ketchupmarinad i skål",
         }
       ],
