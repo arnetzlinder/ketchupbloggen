@@ -12,7 +12,7 @@
 import { gsap } from "gsap"; 
 
     export default {
-        name: 'Magnifying glass',
+        name: 'Magnifying-glass',
         // funktion med gsap
         methods:{
             rotate()
