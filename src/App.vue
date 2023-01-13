@@ -3,7 +3,6 @@ import SiteHeader from './components/SiteHeader.vue';
 import FooterSection from './components/FooterSection.vue';
 import ArticleCard from './components/ArticleCard.vue';
 import NavBar from './components/NavBar.vue';
-
 import recepies from './components/array';
 </script>
 
