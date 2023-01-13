@@ -1,5 +1,5 @@
 <template>
-    <button id="menuBtn" @click="menuOpenClose">Meny
+    <button id="menuBtn" @click="menuOpenClose" :class="{ 'open': menuIsOpen }">Meny <!--samma som v-bind:class="{ 'open': menuIsOpen }"-->
     </button>
 </template>
 
@@ -20,10 +20,15 @@
  </script> 
 
 <style scoped lang="scss">
+@import '../scss/variables.scss';
+button.open {
+    background-color: $secondaryColor200;
+    }
+
 button {
-    background-color: #C41A00;
-    color: #FFF3D0;
-    font-family: 'Istok Web', sans-serif;
+    background-color: $primaryColor200;
+    color: $primaryColor100;
+    font-family: $secondaryFont;
     font-size: 1rem;
     width: 60px;
     height: 35px;
@@ -34,15 +39,22 @@ button {
     align-items: center;
     text-align: center;
     display: inline;
+    margin: 5px 0 0 8px;
 
     &:hover {
         background-color: #AA1700;
     }
     &:active {
-        background-color: #530A02;
-    }
-#menuBtn.open {
-    background-color: #530A02;
+        background-color: $secondaryColor200;
     }
 }
+@media screen and (min-width: 1440px) {
+        button {
+            visibility: hidden;
+        }
+    }
 </style>
+
+
+
+
