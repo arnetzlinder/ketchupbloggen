@@ -17,7 +17,7 @@ export default {
         }
     }
 }
- </script> 
+</script> 
 
 <style scoped lang="scss">
 button.open {
@@ -49,7 +49,7 @@ button {
     }
     &:disabled {
           background-color: #939191;
-        }
+    }
 }
 
 @media screen and (min-width: 1440px) {
