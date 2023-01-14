@@ -1,16 +1,18 @@
-<template>
-    <div class="article-card">
-      <h2 v-html="cardData.name"> </h2>
-      <!-- <p> {{ cardData }} </p> -->
-      <div class="imageplay">
-      <ImagePlay :image-data="cardData.images" />
+  <template>
+    <div class="mainContainer">
+      <div class="article-card">
+        <h2 v-html="cardData.name"> </h2>
+        <!-- <p> {{ cardData }} </p> -->
+        <div class="imageplay">
+        <ImagePlay :image-data="cardData.images" />
+        </div>
+        <div v-html="cardData.figcaption" class="figcaption">
+        </div>
+        <button>Visa Recept</button>
       </div>
-      <div v-html="cardData.figcaption" class="figcaption">
-      </div>
-      <button>Visa Recept</button>
-    </div>
+    </div> 
   </template>
-  
+    
   <script setup lang="ts">
   import ImagePlay from './ImagePlay.vue';
   const props = defineProps(['cardData']);
@@ -20,7 +22,7 @@
   <style lang="scss" scoped>
   @import '../scss/variables.scss';
     .article-card {
-        width: 360px;
+        max-width: 100%;
         height: auto;
         background-color: $secondaryColor300;
         color: $primaryColor100;
@@ -39,6 +41,7 @@
       }
       .figcaption {
         font-family: $secondaryFont;
+        margin: 0 1rem;
       }
 
       button {
@@ -52,8 +55,6 @@
         border-radius: 10px;
         border: 1px solid black;
         
-
-
         &:hover {
           background-color: #AA1700;
         }
@@ -66,5 +67,24 @@
           background-color: #939191;
         }
       }
+    }
+    @media screen and (min-width: 740px) {
+      .mainContainer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+      
+        .article-card {
+        width: 570px;
+        height: auto;
+        }
+      }
+    }
+
+    @media screen and (min-width: 1440px) {
+      .mainContainer {
+        padding: 0 15rem;
+      }
+       
     }
 </style>

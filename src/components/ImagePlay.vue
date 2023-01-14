@@ -69,10 +69,12 @@ export default {
 
     .backward {
         left: 30px;
+        text-shadow: 1px 1px 3px black;
     }
 
     .forward {
         right: 30px;
+        text-shadow: 1px 1px 3px black;
     }
 
     img {

@@ -39,7 +39,7 @@
 
     nav {
         box-sizing: border-box;
-        background-color: #d9d9d9;
+        background-color: #d9d9d9ec;
         padding: 0;
         width: 275px;
         height: auto;
