@@ -1,18 +1,16 @@
 <template>
   <div class="mainContainer">
     <div class="article-card">
-      <h2 v-html="cardData.name"> </h2>
+      <h2 v-html="cardData.name"></h2>
       <div class="imageplay">
         <ImagePlay :image-data="cardData.images" />
       </div>
-      <div v-html="cardData.figcaption" class="figcaption">
-      </div>
+      <div v-html="cardData.figcaption" class="figcaption"></div>
       <button @click="recepieShowHide" class="recepieButton">Visa recept</button>
     </div>
   </div>
-  <aside :class="{'show': recepieShows}">
-    <ShowRecepie :card-data="cardData"
-    @click="recepieShowHide" />
+  <aside :class="{ show: recepieShows }">
+    <ShowRecepie :card-data="cardData" @click="recepieShowHide" />
   </aside>
 </template>
 
@@ -29,20 +27,20 @@ export default {
   data() {
     return {
       recepieShows: false,
-    }
+    };
   },
   methods: {
     recepieShowHide() {
       this.recepieShows = !this.recepieShows;
       // this.$emit('recepieShow', this.recepieShows);
-      console.log('Click event received, recepieShows is ', this.recepieShows );
-    }
-  }
-}
+      console.log('Click event received, recepieShows is ', this.recepieShows);
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-.article-card { 
+.article-card {
   max-width: 100%;
   height: auto;
   background-color: $secondaryColor300;
@@ -76,9 +74,9 @@ export default {
     margin-left: auto;
     border-radius: 10px;
     border: 1px solid black;
-        
+
     &:hover {
-      background-color: #AA1700;
+      background-color: #aa1700;
     }
 
     &:active {
@@ -93,7 +91,7 @@ export default {
 aside.show {
   display: block;
   width: 100vw;
-  height: 100vh; 
+  height: 100vh;
   z-index: 5;
 }
 
@@ -108,10 +106,10 @@ aside {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
-      
+
     .article-card {
-    width: 570px;
-    height: auto;
+      width: 570px;
+      height: auto;
     }
   }
 }
@@ -119,7 +117,6 @@ aside {
 @media screen and (min-width: 1440px) {
   .mainContainer {
     padding: 0 15rem;
-  }       
+  }
 }
-
 </style>
