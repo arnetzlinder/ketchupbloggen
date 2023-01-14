@@ -42,7 +42,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../scss/variables.scss';
 .article-card { 
   max-width: 100%;
   height: auto;
