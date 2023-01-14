@@ -44,10 +44,15 @@ button {
     &:hover {
         background-color: #AA1700;
     }
+
     &:active {
         background-color: $secondaryColor200;
     }
+    &:disabled {
+          background-color: #939191;
+        }
 }
+
 @media screen and (min-width: 1440px) {
         button {
             visibility: hidden;

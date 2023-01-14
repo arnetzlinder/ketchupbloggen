@@ -1,6 +1,6 @@
 <template>
     <nav :class="{'hidden': !isOpen}"> <!--här lägger vi på en klass på nav-elementet genom :, samma som v-bind:class-->
-        <ul v-if="isOpen || minWidth"> <!--if-sats, visas/inte visas om isOpen ELLER minWidth --> 
+        <ul v-if="isOpen || minWidth"> <!--if-sats, visas/ visas inte om isOpen ELLER minWidth är true/false --> 
             <h2>Meny</h2>
             <li><a href="#">Historia</a></li>
             <li><a href="#">Förrätter</a></li>
@@ -18,7 +18,7 @@
             }
         },
         props: ['isOpen'],
-        mounted() { // mounted() funktion som anropas efter att komponenten har lagts till i DOM, kontrollerar den här koden i huvudsak bredden på webbläsarfönstret vid sidladdning och även varje gång fönstret ändras.
+        mounted() { // mounted() funktion som anropas efter att komponenten har lagts till i DOM, kontrollerar här koden bredden på webbläsarfönstret vid sidladdning och även varje gång fönstret ändras.
             this.minWidth = window.innerWidth >= 1440; 
             window.addEventListener('resize', this.checkWidth);
         },
@@ -39,13 +39,15 @@
 
     nav {
         box-sizing: border-box;
-        background-color: #d9d9d990;
+        background-color: #d9d9d9ec;
         padding: 0;
         width: 275px;
         height: auto;
         outline: 1px solid #5A5A5A;
         border-radius: 8px;
         margin-left: 8px;
+        position: absolute;
+        z-index: 10;
 
         ul {
             padding: 0;
@@ -56,7 +58,7 @@
             margin: 0;
             
             li {
-                margin: 1rem 0;
+            margin: 1rem 0;
             }
 
             li:last-child {
@@ -115,7 +117,7 @@
                 display: flex;
                 flex-direction: row;
                 position: absolute;
-                top: 450px;
+                top:-25px;
 
                 li {
                     margin: 0 2.5rem;
