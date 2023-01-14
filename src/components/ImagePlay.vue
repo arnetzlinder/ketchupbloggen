@@ -11,7 +11,7 @@
                 for (let i = 0; i < imageData.length; i++) {
                 const item = imageData[i];
                 const div = document.createElement('div');
-                div.classList.add(currentIndex === i ? 'active' : '');
+                div.classList.add(currentIndex === i ? 'active' : ''); //forenklad if/else loop (om currentIndex === i är true; lägg på klass .active, annars inte)
                 div.setAttribute('key', i);
             måste sätta key så Vue vet vad den ska hålla koll på. 
             https://vuejs.org/guide/essentials/list.html-->
