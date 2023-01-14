@@ -4,26 +4,25 @@
 </template>
 
 <script lang="ts">
-    export default {
-        data() {
-            return {
-                menuIsOpen: false,
-            }
-        },
-        methods: {
-            menuOpenClose() {
-                this.menuIsOpen = !this.menuIsOpen;
-                this.$emit('menuClick', this.menuIsOpen);
-            }
+export default {
+    data() {
+        return {
+            menuIsOpen: false,
+        }
+    },
+    methods: {
+        menuOpenClose() {
+            this.menuIsOpen = !this.menuIsOpen;
+            this.$emit('menuClick', this.menuIsOpen);
         }
     }
+}
  </script> 
 
 <style scoped lang="scss">
-@import '../scss/variables.scss';
 button.open {
     background-color: $secondaryColor200;
-    }
+}
 
 button {
     background-color: $primaryColor200;
