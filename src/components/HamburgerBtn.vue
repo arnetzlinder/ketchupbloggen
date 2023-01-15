@@ -22,6 +22,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../scss/variables.scss';
 button.open {
   background-color: $secondaryColor200;
 }
@@ -41,21 +42,16 @@ button {
   text-align: center;
   display: inline;
   margin: 5px 0 0 8px;
-
   &:hover {
     background-color: #aa1700;
   }
-
   &:active {
     background-color: $secondaryColor200;
   }
-
   &:disabled {
     background-color: #939191;
   }
-
 }
-
 @media screen and (min-width: 1440px) {
   button {
     visibility: hidden;
