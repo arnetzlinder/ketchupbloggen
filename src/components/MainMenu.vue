@@ -35,6 +35,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 nav {
   box-sizing: border-box;
   background-color: #d9d9d9ec;
