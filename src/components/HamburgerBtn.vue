@@ -41,7 +41,6 @@ button {
   align-items: center;
   text-align: center;
   display: inline;
-  margin: 5px 0 0 8px;
   &:hover {
     background-color: #aa1700;
   }

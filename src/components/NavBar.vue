@@ -40,5 +40,6 @@ export default {
 .nav-container {
   display: flex;
   justify-content: space-between;
+  margin: 5px 8px;
 }
 </style>
