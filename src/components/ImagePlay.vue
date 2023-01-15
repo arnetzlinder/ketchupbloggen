@@ -33,16 +33,19 @@ export default {
   props: ['imageData'],
   data() {
     return {
-      currentIndex: 0, // variabel hålla reda på vart vi är i bildspelet
+      // variabel hålla reda på vart vi är i bildspelet
+      currentIndex: 0, 
     };
   },
   methods: {
     imageForward() {
+      // om vi går till höger och det blir mer än så många bilder vi har i arrayen
       if (this.currentIndex + 1 > this.imageData.length - 1) {
-        // om vi går till höger och det blir mer än så många bilder vi har i arrayen
-        this.currentIndex = 0; // då startar vi om vårt bildspel
+        // då startar vi om vårt bildspel
+        this.currentIndex = 0;
       } else {
-        this.currentIndex += 1; // i annat fall stega 1 steg framåt
+        // i annat fall stega 1 steg framåt
+        this.currentIndex += 1; 
       }
     },
     imageBackward() {

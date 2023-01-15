@@ -1,7 +1,7 @@
 <template>
+  <!--:class är samma som v-bind:class="{ 'open': menuIsOpen }"-->
   <button id="menuBtn" @click="menuOpenClose" :class="{ open: menuIsOpen }">
     Meny
-    <!--samma som v-bind:class="{ 'open': menuIsOpen }"-->
   </button>
 </template>
 

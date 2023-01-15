@@ -1,13 +1,13 @@
 <template>
   <div class="nav-container">
-    <HamburgerBtn @menu-click="toggleMenu" />
     <!-- Här kopplas klick-eventet "menu-click" ihop från komponenten "HamburgerBtn" (se rad 16 i HamburgerBtn.vue) @-tecken används för att koppla event. -->
+    <HamburgerBtn @menu-click="toggleMenu" />
     <input type="text" />
-    <MagnifyingGlass />
     <!--här kopplar vi in förstoringsglaskomponenten-->
+    <MagnifyingGlass />
   </div>
-  <MainMenu :is-open="showMenu" />
   <!-- Här kopplar vi ihop if-satsen från komponenten "MainMenu.vue", det görst med ett :-tecken, vilket är en förkortning av v-bind. -->
+  <MainMenu :is-open="showMenu" />
 </template>
 
 <script lang="ts">
@@ -23,7 +23,8 @@ export default {
   },
   data() {
     return {
-      showMenu: false, // Variabel-deklaration, boolean.
+      // Variabel-deklaration, boolean.
+      showMenu: false,
     };
   },
   methods: {

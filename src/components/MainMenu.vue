@@ -1,9 +1,8 @@
 <template>
-  <nav  v-if="isOpen || minWidth">
-    <!--här lägger vi på en klass på nav-elementet genom :, samma som v-bind:class-->
+  <!--if-sats, visas/ visas inte om isOpen ELLER minWidth är true/false -->
+  <nav v-if="isOpen || minWidth">
     <h2>Meny</h2>
     <ul>
-      <!--if-sats, visas/ visas inte om isOpen ELLER minWidth är true/false -->
       <li><a href="#">Historia</a></li>
       <li><a href="#">Förrätter</a></li>
       <li><a href="#">Huvudrätter</a></li>
@@ -16,12 +15,13 @@
 export default {
   data() {
     return {
-      minWidth: false, // deklarerar variabel minWidth
+      // deklarerar variabel minWidth
+      minWidth: false, 
     };
   },
   props: ['isOpen'],
+  // mounted() funktion som anropas efter att komponenten har lagts till i DOM, kontrollerar här koden bredden på webbläsarfönstret vid sidladdning och även varje gång fönstret ändras.
   mounted() {
-    // mounted() funktion som anropas efter att komponenten har lagts till i DOM, kontrollerar här koden bredden på webbläsarfönstret vid sidladdning och även varje gång fönstret ändras.
     this.minWidth = window.innerWidth >= 1440;
     window.addEventListener('resize', this.checkWidth);
   },
