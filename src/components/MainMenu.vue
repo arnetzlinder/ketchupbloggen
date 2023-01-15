@@ -1,9 +1,9 @@
 <template>
   <nav :class="{ hidden: !isOpen }">
     <!--här lägger vi på en klass på nav-elementet genom :, samma som v-bind:class-->
+    <h2>Meny</h2>
     <ul v-if="isOpen || minWidth">
       <!--if-sats, visas/ visas inte om isOpen ELLER minWidth är true/false -->
-      <h2>Meny</h2>
       <li><a href="#">Historia</a></li>
       <li><a href="#">Förrätter</a></li>
       <li><a href="#">Huvudrätter</a></li>
@@ -37,10 +37,11 @@ export default {
 <style scoped lang="scss">
 
 nav.hidden {
-  outline: none;
+  display: none;
 }
 
 nav {
+  display: block;
   box-sizing: border-box;
   background-color: #d9d9d9ec;
   padding: 0;
@@ -51,6 +52,14 @@ nav {
   margin-left: 8px;
   position: absolute;
   z-index: 10;
+
+  h2 {
+    font-size: 2rem;
+    font-family: $primaryFont;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    }
 
   ul {
     padding: 0;
@@ -68,13 +77,6 @@ nav {
       margin-bottom: 5rem;
     }
   }
-}
-
-h2 {
-  font-size: 2rem;
-  font-family: $primaryFont;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
 }
 
 a {
