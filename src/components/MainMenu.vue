@@ -37,11 +37,15 @@ export default {
 <style scoped lang="scss">
 
 nav.hidden {
-  display: none;
+  outline: none;
+  background-color: transparent;
+
+  h2 {
+    visibility: hidden;
+  }
 }
 
 nav {
-  display: block;
   box-sizing: border-box;
   background-color: #d9d9d9ec;
   padding: 0;
@@ -54,12 +58,12 @@ nav {
   z-index: 10;
 
   h2 {
-    font-size: 2rem;
-    font-family: $primaryFont;
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    }
+  font-size: 2rem;
+  font-family: $primaryFont;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  }
 
   ul {
     padding: 0;
