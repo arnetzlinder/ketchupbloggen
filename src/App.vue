@@ -9,16 +9,14 @@ import AboutKetchup from './components/AboutKetchup.vue';
 </script>
 
 <template>
-    <SiteHeader />
-    <NavBar />
-    <AboutKetchup />
-    <main class="articles">
-        <ArticleCard v-for="(recipe, index) in recepies" :card-data="recipe" :key="index" />
-    </main>
-    <FooterSection />
-    <CookieBanner />
+  <SiteHeader />
+  <NavBar />
+  <AboutKetchup />
+  <main class="articles">
+    <ArticleCard v-for="(recipe, index) in recepies" :card-data="recipe" :key="index" />
+  </main>
+  <FooterSection />
+  <CookieBanner />
 </template>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>
