@@ -40,6 +40,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .article-card {
   max-width: 100%;
   height: auto;
@@ -72,6 +73,7 @@ export default {
     width: 120px;
     height: 35px;
     margin-left: auto;
+    margin-top: 10px;
     border-radius: 10px;
     border: 1px solid black;
 
@@ -93,6 +95,7 @@ aside.show {
   width: 100vw;
   height: 100vh;
   z-index: 5;
+  background-color: $secondaryColor200;
 }
 
 aside {

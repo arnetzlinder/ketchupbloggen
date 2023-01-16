@@ -35,7 +35,6 @@
 .show-recepie {
         width: 360px;
         height: 330px;
-        background-color: $secondaryColor300;
         color: $primaryColor100;
         font-family: $primaryFont;
         .desc {
