@@ -1,9 +1,6 @@
 <template>
-  <div id="magnifying-glass-container">
-    <!--container för allt innehåll i navbar-->
-    <button id="button" v-on:click="rotate()">
-      <!--knappen med förstoringsglas med klick funktion-->
-      <!--länkar in svg med ikonen-->
+  <div class="icon-container">
+    <button aria-label="button for submitting search" class="search-icon" @click="iconAnimation()">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px">
         <path
           d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
@@ -14,20 +11,22 @@
 </template>
 
 <script lang="ts">
-// importerar gsap bibliotek
 import { gsap } from 'gsap';
-
 export default {
-  name: 'Magnifying-glass',
-  // funktion med gsap
+  name: 'Icon-Animation',
   methods: {
-    rotate() {
-      gsap.to('#button', {
-        rotation: 360,
-        yoyo: true,
-        repeat: 1,
-        duration: 1,
-      });
+    iconAnimation() {
+      gsap.fromTo(
+        '.search-icon',
+        {
+          scale: 1.5,
+          duration: 1,
+        },
+        {
+          scale: 1,
+          duration: 1,
+        }
+      );
     },
   },
 };
@@ -35,8 +34,11 @@ export default {
 
 <style lang="scss" scoped>
 @import '../scss/style.scss';
-#button {
-  border: none;
+
+.search-icon {
+  padding: 10px;
   background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 </style>
