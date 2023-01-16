@@ -2,10 +2,10 @@
   <aside>
     <div class="aside-container">
       <picture>
-        <source media="(min-width: 740px)" srcset="../../about-ketchup-tablet.webp" />
-        <source media="(min-width: 1440px)" srcset="../../about-ketchup-desktop.webp" />
+        <source media="(min-width: 740px)" srcset="./about-ketchup-tablet.webp" />
+        <source media="(min-width: 1440px)" srcset="./about-ketchup-desktop.webp" />
         <img
-          src="../../about-ketchup-mobile.webp"
+          src="./about-ketchup-mobile.webp"
           alt="small Heinz ketchup bottle on a white background, photo studio setup."
           width="143"
           height="109"
@@ -62,7 +62,6 @@ export default {};
 }
 aside {
   position: relative;
-  margin-block-start: 1rem;
   width: 100%;
   max-height: 360px;
   margin-inline: auto;

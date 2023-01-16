@@ -39,6 +39,7 @@ export default {
 .nav-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 5px 8px;
 }
 </style>

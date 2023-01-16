@@ -40,20 +40,21 @@ export default {
 
 .search-container {
   display: flex;
+  align-items: center;
 
   .input-container {
     position: relative;
 
     input {
-      margin-top: 5px;
+      // margin-top: 5px;
       width: 150px;
-      height: 35px;
+      height: 31px;
       background-color: #dad0b27c;
       border-radius: 5px;
       border: 1px solid black;
       font-family: $secondaryFont;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      margin-bottom: 2px;
+      // margin-bottom: 2px;
       padding-left: 5px;
     }
   }
