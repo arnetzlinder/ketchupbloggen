@@ -11,12 +11,30 @@ import AboutKetchup from './components/AboutKetchup.vue';
 <template>
   <SiteHeader />
   <NavBar />
-  <AboutKetchup />
-  <main class="articles">
-    <ArticleCard v-for="(recipe, index) in recepies" :card-data="recipe" :key="index" />
-  </main>
+  <div class="content-wrapper">
+    <AboutKetchup />
+    <main class="articles">
+      <ArticleCard v-for="(recipe, index) in recepies" :card-data="recipe" :key="index" />
+    </main>
+  </div>
   <FooterSection />
   <CookieBanner />
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.content-wrapper {
+  max-width: 420px;
+  position: relative;
+  margin-inline: auto;
+}
+
+@media (width >= 740px) {
+  .content-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 1000px;
+  }
+}
+
+
+</style>

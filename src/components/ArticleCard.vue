@@ -42,16 +42,11 @@ export default {
 <style lang="scss" scoped>
 
 .article-card {
-  max-width: 100%;
-  height: auto;
   background-color: $secondaryColor300;
   color: $primaryColor100;
   font-family: $primaryFont;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
   padding: 1rem;
-  margin: 10px 0;
+  margin: 0;
 
   h2 {
     text-align: center;
@@ -104,22 +99,4 @@ aside {
   color: $primaryColor100;
 }
 
-@media screen and (min-width: 740px) {
-  .mainContainer {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-
-    .article-card {
-      width: 570px;
-      height: auto;
-    }
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .mainContainer {
-    padding: 0 15rem;
-  }
-}
 </style>

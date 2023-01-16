@@ -61,10 +61,7 @@ export default {};
   clear: both;
 }
 aside {
-  position: relative;
-  width: 100%;
   max-height: 360px;
-  margin-inline: auto;
   overflow: auto;
   background-color: $secondaryColor200;
   color: #dad0b2;
@@ -96,10 +93,5 @@ aside {
   display: block;
   margin-block-end: 1rem;
 }
-@media (width >= 740px) {
-  aside {
-    max-width: 100%;
-    max-height: 74, 1875;
-  }
-}
+
 </style>
