@@ -1,6 +1,6 @@
 <template>
-  <!--if-sats, visas/ visas inte om isOpen ELLER minWidth är true/false -->
   <nav v-if="isOpen || minWidth">
+    <!--if-sats, visas/ visas inte om isOpen ELLER minWidth är true/false -->
     <h2>Meny</h2>
     <ul>
       <li><a href="#">Historia</a></li>
@@ -15,27 +15,26 @@
 export default {
   data() {
     return {
+      minWidth: false,
       // deklarerar variabel minWidth
-      minWidth: false, 
     };
   },
   props: ['isOpen'],
-  // mounted() funktion som anropas efter att komponenten har lagts till i DOM, kontrollerar här koden bredden på webbläsarfönstret vid sidladdning och även varje gång fönstret ändras.
   mounted() {
     this.minWidth = window.innerWidth >= 1440;
     window.addEventListener('resize', this.checkWidth);
   },
+  // mounted() funktion som anropas efter att komponenten har lagts till i DOM, kontrollerar här koden bredden på webbläsarfönstret vid sidladdning och även varje gång fönstret ändras.
   methods: {
     checkWidth() {
-      // Om bredden är större än eller lika med 1440 pixlar ställs egenskapen minWidth till true.
       this.minWidth = window.innerWidth >= 1440;
+      // Om bredden är större än eller lika med 1440 pixlar ställs egenskapen minWidth till true.
     },
   },
 };
 </script>
 
 <style scoped lang="scss">
-
 nav {
   box-sizing: border-box;
   background-color: #d9d9d9ec;

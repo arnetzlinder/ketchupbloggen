@@ -1,6 +1,6 @@
 <template>
-  <!--:class är samma som v-bind:class="{ 'open': menuIsOpen }"-->
   <button id="menuBtn" @click="menuOpenClose" :class="{ open: menuIsOpen }">
+    <!--:class är samma som v-bind:class="{ 'open': menuIsOpen }"-->
     Meny
   </button>
 </template>
@@ -22,7 +22,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
 button.open {
   background-color: $secondaryColor200;
 }

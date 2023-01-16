@@ -34,18 +34,19 @@ export default {
   data() {
     return {
       // variabel hålla reda på vart vi är i bildspelet
-      currentIndex: 0, 
+      currentIndex: 0,
     };
   },
   methods: {
     imageForward() {
-      // om vi går till höger och det blir mer än så många bilder vi har i arrayen
       if (this.currentIndex + 1 > this.imageData.length - 1) {
-        // då startar vi om vårt bildspel
+        // om vi går till höger och det blir mer än så många bilder vi har i arrayen
+
         this.currentIndex = 0;
+        // då startar vi om vårt bildspel
       } else {
+        this.currentIndex += 1;
         // i annat fall stega 1 steg framåt
-        this.currentIndex += 1; 
       }
     },
     imageBackward() {
@@ -63,7 +64,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
 button {
   background-color: transparent;
   color: #dad0b2;
