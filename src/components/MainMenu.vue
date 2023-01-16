@@ -1,14 +1,16 @@
 <template>
-  <nav v-if="isOpen || minWidth">
-    <!--if-sats, visas/ visas inte om isOpen ELLER minWidth är true/false -->
-    <h2>Meny</h2>
-    <ul>
-      <li><a href="#">Historia</a></li>
-      <li><a href="#">Förrätter</a></li>
-      <li><a href="#">Huvudrätter</a></li>
-      <li><a href="#">Efterrätter</a></li>
-    </ul>
-  </nav>
+  <transition name="slide-fade">
+    <nav v-if="isOpen || minWidth">
+      <!--if-sats, visas/ visas inte om isOpen ELLER minWidth är true/false -->
+      <h2>Meny</h2>
+      <ul>
+        <li><a href="#">Historia</a></li>
+        <li><a href="#">Förrätter</a></li>
+        <li><a href="#">Huvudrätter</a></li>
+        <li><a href="#">Efterrätter</a></li>
+      </ul>
+    </nav>
+  </transition>
 </template>
 
 <script lang="ts">
@@ -35,6 +37,20 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
 nav {
   background-color: #d9d9d9;
   padding: 0;
