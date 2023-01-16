@@ -23,7 +23,8 @@ export default {
   },
   data() {
     return {
-      showMenu: false, // Variabel-deklaration, boolean.
+      showMenu: false,
+      // Variabel-deklaration, boolean.
     };
   },
   methods: {
@@ -39,5 +40,6 @@ export default {
 .nav-container {
   display: flex;
   justify-content: space-between;
+  margin: 5px 8px;
 }
 </style>

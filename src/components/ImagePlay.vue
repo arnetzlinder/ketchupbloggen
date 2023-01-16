@@ -13,7 +13,7 @@
     <div class="dots">
       <!--loopar igenom [imageData],och skapar ett nytt div-element för varje element , addera klass active NÄR aktuellt index matchar variabeln currentIndex -->
       <div v-for="(item, index) in imageData" :key="index" :class="{ active: currentIndex === index }"></div>
-
+      <!-- (variabel, variabelindex) i just denna loopen-->
       <!-- samma som:
                 for (let i = 0; i < imageData.length; i++) {
                 const item = imageData[i];
@@ -33,16 +33,20 @@ export default {
   props: ['imageData'],
   data() {
     return {
-      currentIndex: 0, // variabel hålla reda på vart vi är i bildspelet
+      // variabel hålla reda på vart vi är i bildspelet
+      currentIndex: 0,
     };
   },
   methods: {
     imageForward() {
       if (this.currentIndex + 1 > this.imageData.length - 1) {
         // om vi går till höger och det blir mer än så många bilder vi har i arrayen
-        this.currentIndex = 0; // då startar vi om vårt bildspel
+
+        this.currentIndex = 0;
+        // då startar vi om vårt bildspel
       } else {
-        this.currentIndex += 1; // i annat fall stega 1 steg framåt
+        this.currentIndex += 1;
+        // i annat fall stega 1 steg framåt
       }
     },
     imageBackward() {
@@ -60,8 +64,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../scss/variables.scss';
-
 button {
   background-color: transparent;
   color: #dad0b2;
@@ -106,5 +108,6 @@ img {
 
 .dots div.active {
   background-color: $secondaryColor200;
+  scale: 1.5;
 }
 </style>

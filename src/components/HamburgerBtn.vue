@@ -1,7 +1,7 @@
 <template>
   <button id="menuBtn" @click="menuOpenClose" :class="{ open: menuIsOpen }">
+    <!--:class är samma som v-bind:class="{ 'open': menuIsOpen }"-->
     Meny
-    <!--samma som v-bind:class="{ 'open': menuIsOpen }"-->
   </button>
 </template>
 
@@ -40,22 +40,16 @@ button {
   align-items: center;
   text-align: center;
   display: inline;
-  margin: 5px 0 0 8px;
-
   &:hover {
     background-color: #aa1700;
   }
-
   &:active {
     background-color: $secondaryColor200;
   }
-
   &:disabled {
     background-color: #939191;
   }
-
 }
-
 @media screen and (min-width: 1440px) {
   button {
     visibility: hidden;
