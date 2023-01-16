@@ -36,15 +36,14 @@ export default {
 
 <style scoped lang="scss">
 nav {
-  box-sizing: border-box;
-  background-color: #d9d9d9ec;
+  background-color: #d9d9d9;
   padding: 0;
   width: 275px;
   height: auto;
   outline: 1px solid #5a5a5a;
   border-radius: 8px;
-  margin-left: 8px;
   position: absolute;
+  margin-top: -14px;
   z-index: 10;
 
   h2 {
@@ -105,23 +104,27 @@ a {
 
 @media screen and (min-width: 1440px) {
   nav {
-    background-color: $primaryColor100;
     outline: none;
     padding: 0;
     width: 100%;
-    height: auto;
+    height: 0;
     margin-left: 8px;
 
     ul {
-      display: block;
       display: flex;
       flex-direction: row;
-      position: absolute;
-      top: -25px;
-
+      align-items: center;
+      position: relative;
+      top: -30px;
+      
       li {
         margin: 0 2.5rem;
       }
+
+      li:last-child {
+      margin: 0;
+      padding: 0;
+    }
     }
 
     h2 {
