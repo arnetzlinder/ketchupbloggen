@@ -94,4 +94,11 @@ aside {
   margin-block-end: 1rem;
 }
 
+@media (width >= 740px) {
+  aside {
+    max-width: 360px;
+    max-height: 1194px;
+    border-radius: 0.625rem;
+  }
+}
 </style>
