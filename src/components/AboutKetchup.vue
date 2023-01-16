@@ -2,10 +2,10 @@
   <aside>
     <div class="aside-container">
       <picture>
-        <source media="(min-width: 740px)" srcset="./about-ketchup-tablet.webp" />
-        <source media="(min-width: 1440px)" srcset="./about-ketchup-desktop.webp" />
+        <source media="(min-width: 740px)" srcset="../../public/about-ketchup-tablet.webp" />
+        <source media="(min-width: 1440px)" srcset="../../public/about-ketchup-desktop.webp" />
         <img
-          src="./about-ketchup-mobile.webp"
+          src="../../public/about-ketchup-mobile.webp"
           alt="small Heinz ketchup bottle on a white background, photo studio setup."
           width="143"
           height="109"
