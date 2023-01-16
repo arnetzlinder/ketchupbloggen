@@ -30,11 +30,10 @@ import AboutKetchup from './components/AboutKetchup.vue';
 
 @media (width >= 740px) {
   .content-wrapper {
-  display: flex;
-  flex-direction: row-reverse;
-  max-width: 1000px;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1000px;
+    gap: 1rem;
   }
 }
-
-
 </style>
