@@ -1,9 +1,8 @@
 <template>
-  <nav :class="{ hidden: !isOpen }">
-    <!--här lägger vi på en klass på nav-elementet genom :, samma som v-bind:class-->
-    <ul v-if="isOpen || minWidth">
-      <!--if-sats, visas/ visas inte om isOpen ELLER minWidth är true/false -->
-      <h2>Meny</h2>
+  <nav v-if="isOpen || minWidth">
+    <!--if-sats, visas/ visas inte om isOpen ELLER minWidth är true/false -->
+    <h2>Meny</h2>
+    <ul>
       <li><a href="#">Historia</a></li>
       <li><a href="#">Förrätter</a></li>
       <li><a href="#">Huvudrätter</a></li>
@@ -16,30 +15,26 @@
 export default {
   data() {
     return {
-      minWidth: false, // deklarerar variabel minWidth
+      minWidth: false,
+      // deklarerar variabel minWidth
     };
   },
   props: ['isOpen'],
   mounted() {
-    // mounted() funktion som anropas efter att komponenten har lagts till i DOM, kontrollerar här koden bredden på webbläsarfönstret vid sidladdning och även varje gång fönstret ändras.
     this.minWidth = window.innerWidth >= 1440;
     window.addEventListener('resize', this.checkWidth);
   },
+  // mounted() funktion som anropas efter att komponenten har lagts till i DOM, kontrollerar här koden bredden på webbläsarfönstret vid sidladdning och även varje gång fönstret ändras.
   methods: {
     checkWidth() {
-      // Om bredden är större än eller lika med 1440 pixlar ställs egenskapen minWidth till true.
       this.minWidth = window.innerWidth >= 1440;
+      // Om bredden är större än eller lika med 1440 pixlar ställs egenskapen minWidth till true.
     },
   },
 };
 </script>
 
 <style scoped lang="scss">
-
-nav.hidden {
-  outline: none;
-}
-
 nav {
   box-sizing: border-box;
   background-color: #d9d9d9ec;
@@ -51,6 +46,14 @@ nav {
   margin-left: 8px;
   position: absolute;
   z-index: 10;
+
+  h2 {
+    font-size: 2rem;
+    font-family: $primaryFont;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
 
   ul {
     padding: 0;
@@ -68,13 +71,6 @@ nav {
       margin-bottom: 5rem;
     }
   }
-}
-
-h2 {
-  font-size: 2rem;
-  font-family: $primaryFont;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
 }
 
 a {
@@ -106,6 +102,7 @@ a {
     margin-bottom: 3rem;
   }
 }
+
 @media screen and (min-width: 1440px) {
   nav {
     background-color: $primaryColor100;
