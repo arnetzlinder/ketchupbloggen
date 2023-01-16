@@ -1,8 +1,8 @@
 <template>
-    <div id="search-container">
-        <div id="input-container">
+    <div class="search-container">
+        <div class="input-container">
             <input @click="toggleSearch()"  type="text" placeholder="ketchupsoppa">
-                <div id="search-menu" v-if="searchOpen">
+                <div class="search-menu" v-if="searchOpen">
                     <ul>
                         <li>Ketchupsoppa</li>
                         <li>Ketchupsoppa med sting</li>
@@ -42,10 +42,11 @@ import SearchIcon from './SearchIcon.vue';
 
 
 
-#search-container{
+.search-container{
     display: flex;
 
-    #input-container{
+    .input-container{
+        position: relative;
 
     input{
         margin-top: 5px;
@@ -61,19 +62,17 @@ import SearchIcon from './SearchIcon.vue';
     }
 }
 
-#search-menu{
+.search-menu{
     background-color: #D9D9D9;
     border-radius: 8px;
-    width: 275px;
-    height: 185px;
     border: 1px solid black;
     z-index: 10;
     position: absolute;
-    margin-left: -115px;
+    margin-left: -100px;
     ul{
         padding: 10px;
         li{
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         padding-left: 5px;
         color: #530A02;
         display: flex;
