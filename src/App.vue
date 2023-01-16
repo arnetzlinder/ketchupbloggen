@@ -5,11 +5,13 @@ import CookieBanner from './components/CookieBanner.vue';
 import ArticleCard from './components/ArticleCard.vue';
 import NavBar from './components/NavBar.vue';
 import recepies from './components/array';
+import AboutKetchup from './components/AboutKetchup.vue';
 </script>
 
 <template>
     <SiteHeader />
     <NavBar />
+    <AboutKetchup />
     <main class="articles">
         <ArticleCard v-for="(recipe, index) in recepies" :card-data="recipe" :key="index" />
     </main>

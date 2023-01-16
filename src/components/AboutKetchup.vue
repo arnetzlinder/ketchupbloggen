@@ -5,7 +5,7 @@
             <picture>
                 <source media="(min-width: 740px)" srcset="../../about-ketchup-tablet.webp">
                 <source media="(min-width: 1440px)" srcset="../../about-ketchup-desktop.webp">
-                <img src="../../about-ketchup-mobile.webp" alt="small Heinz ketchup bottle on a white background, photo studio setup." width="143" height="109"> 
+                <img src="../../about-ketchup-mobile.webp" alt="small Heinz ketchup bottle on a white background, photo studio setup." width="143" height="109" loading="lazy"> 
             </picture>
 
             <div>
@@ -83,7 +83,7 @@
         display: block;
         margin-block-end: 1rem;
     }
-    @media (width >= 744px) {
+    @media (width >= 740px) {
         aside {
             max-width: 100%;
             max-height: 74,1875;
