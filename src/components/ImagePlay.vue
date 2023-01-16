@@ -13,7 +13,7 @@
     <div class="dots">
       <!--loopar igenom [imageData],och skapar ett nytt div-element för varje element , addera klass active NÄR aktuellt index matchar variabeln currentIndex -->
       <div v-for="(item, index) in imageData" :key="index" :class="{ active: currentIndex === index }"></div>
-
+      <!-- (variabel, variabelindex) i just denna loopen-->
       <!-- samma som:
                 for (let i = 0; i < imageData.length; i++) {
                 const item = imageData[i];
@@ -108,5 +108,6 @@ img {
 
 .dots div.active {
   background-color: $secondaryColor200;
+  scale: 1.5;
 }
 </style>
