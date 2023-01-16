@@ -93,6 +93,7 @@ aside.show {
   width: 100vw;
   height: 100vh;
   z-index: 5;
+  background-color: $secondaryColor200;
 }
 
 aside {
