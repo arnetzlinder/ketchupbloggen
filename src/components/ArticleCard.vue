@@ -1,11 +1,13 @@
 <template>
-  <div class="mainContainer">
+  <div class="main-container">
     <div class="article-card">
       <h2 v-html="cardData.name"></h2>
-      <div class="imageplay">
-        <ImagePlay :image-data="cardData.images" />
+      <div class="flex-container">
+        <div class="imageplay">
+          <ImagePlay :image-data="cardData.images" />
+        </div>
+        <div v-html="cardData.figcaption" class="figcaption"></div>
       </div>
-      <div v-html="cardData.figcaption" class="figcaption"></div>
       <button @click="recepieShowHide" class="recepieButton">Visa recept</button>
     </div>
   </div>
@@ -46,7 +48,6 @@ export default {
   font-family: $primaryFont;
   padding: 1rem;
   margin: 0;
-  border-radius: 5px;
   margin-bottom: 10px;
 
   h2 {
@@ -61,7 +62,6 @@ export default {
   .figcaption {
     font-family: $secondaryFont;
     margin: 0 1rem;
-
   }
 
   button {
@@ -93,9 +93,12 @@ export default {
 }
 aside.show {
   display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
   width: 100vw;
-  height: 100vh;
-  z-index: 5;
+  height: 100%;
+  z-index: 50;
   background-color: $secondaryColor200;
 }
 
@@ -103,5 +106,42 @@ aside {
   display: none;
   background-color: $primaryColor200;
   color: $primaryColor100;
+}
+
+@media (width >= 740px) {
+  .article-card {
+    border-radius: 0px 8px 8px 0px;
+    .figcaption {
+      max-width: 236px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (width >= 1400px) {
+  .article-card {
+    border-radius: 5px;
+    padding: 1rem 2.5rem 2.5rem 2.5rem;
+
+    h2 {
+      text-align: left;
+    }
+    .figcaption {
+      line-height: 1.5rem;
+      align-self: start;
+      margin-block-start: 1rem;
+      padding-left: 1.5rem;
+    }
+  }
+
+  .flex-container {
+    flex-direction: row;
+  }
 }
 </style>

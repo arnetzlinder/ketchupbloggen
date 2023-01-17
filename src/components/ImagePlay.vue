@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="imageplay-wrapper">
     <button @click="imageBackward" class="material-symbols-outlined backward">arrow_back</button>
     <img
       :src="imageData[currentIndex].img"
@@ -65,23 +65,27 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.imageplay-wrapper {
+  position: relative;
+}
 button {
   background-color: transparent;
   color: #dad0b2;
   border: none;
   padding: 0;
-  position: relative;
-  top: -80px;
-}
-
-.backward {
-  left: 30px;
+  position: absolute;
+  top: 38%;
   text-shadow: 1px 1px 3px black;
 }
 
 .forward {
-  right: 30px;
-  text-shadow: 1px 1px 3px black;
+  right: 1.5rem;
+  scale: 1.5;
+}
+
+.backward {
+  left: 1.5rem;
+  scale: 1.5;
 }
 
 img {
@@ -104,11 +108,27 @@ img {
   box-shadow: 1px 1px 5px #333;
   position: relative;
   top: -40px;
-  border: 1px solid whitesmoke
+  border: 1px solid whitesmoke;
 }
 
 .dots div.active {
   background-color: $secondaryColor200;
   scale: 1.5;
+}
+
+@media (width >= 1400) {
+  // .imageplay-wrapper {
+  // }
+
+  // }
+
+  .backward {
+    top: 97px;
+    left: 0px;
+  }
+
+  .dots div {
+    top: -150px;
+  }
 }
 </style>

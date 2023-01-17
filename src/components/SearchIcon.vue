@@ -36,7 +36,6 @@ export default {
 @import '../scss/style.scss';
 
 .search-icon {
-  padding: 10px;
   background-color: transparent;
   border: none;
 }

@@ -100,7 +100,7 @@ a {
     color: #000;
   }
 }
-@media screen and (min-width: 744px) {
+@media screen and (min-width: 740px) {
   nav {
     width: 375px;
 
@@ -118,7 +118,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1400px) {
   nav {
     outline: none;
     padding: 0;
@@ -132,15 +132,15 @@ a {
       align-items: center;
       position: relative;
       top: -30px;
-      
+
       li {
         margin: 0 2.5rem;
       }
 
       li:last-child {
-      margin: 0;
-      padding: 0;
-    }
+        margin: 0;
+        padding: 0;
+      }
     }
 
     h2 {

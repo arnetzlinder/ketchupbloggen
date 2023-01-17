@@ -1,6 +1,6 @@
 <template>
   <div class="nav-container">
-    <HamburgerBtn @menu-click="toggleMenu"/>
+    <HamburgerBtn @menu-click="toggleMenu" />
     <!-- Här kopplas klick-eventet "menu-click" ihop från komponenten "HamburgerBtn" (se rad 16 i HamburgerBtn.vue) @-tecken används för att koppla event. -->
     <SearchMenu />
   </div>
@@ -40,6 +40,5 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5px 8px;
 }
 </style>

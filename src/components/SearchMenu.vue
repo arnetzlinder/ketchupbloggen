@@ -66,6 +66,7 @@ export default {
     z-index: 10;
     position: absolute;
     margin-left: -100px;
+    height: 185px;
     ul {
       padding: 10px;
       li {
@@ -87,6 +88,18 @@ export default {
         margin-bottom: 15px;
       }
     }
+  }
+}
+
+@media screen and (min-width: 740px) {
+  input {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  input {
+    width: 339px;
   }
 }
 </style>

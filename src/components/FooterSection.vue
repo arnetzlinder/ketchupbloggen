@@ -9,15 +9,16 @@
 
 footer {
   position: absolute;
+  display: block;
   width: 100vw;
   background-color: #dad0b2;
 
   p {
-    padding-inline-start: 1rem;
+    padding-inline-start: 0.5rem;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1400px) {
   p {
     padding-inline-start: 2rem;
   }
