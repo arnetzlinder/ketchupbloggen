@@ -1,9 +1,9 @@
 <template>
   <transition name="slide-fade">
-    <nav v-if="isOpen || minWidth">
+    <nav v-if="isOpen">
       <!--if-sats, visas/ visas inte om isOpen ELLER minWidth är true/false -->
       <h2>Meny</h2>
-      <ul>
+      <ul class="less-than-1400">
         <li><a href="#">Historia</a></li>
         <li><a href="#">Förrätter</a></li>
         <li><a href="#">Huvudrätter</a></li>
@@ -11,6 +11,16 @@
       </ul>
     </nav>
   </transition>
+    <nav v-if="minWidth">
+      <!--if-sats, visas/ visas inte om isOpen ELLER minWidth är true/false -->
+      <ul class="1400">
+        <li><a href="#">Historia</a></li>
+        <li><a href="#">Förrätter</a></li>
+        <li><a href="#">Huvudrätter</a></li>
+        <li><a href="#">Efterrätter</a></li>
+      </ul>
+    </nav>
+  
 </template>
 
 <script lang="ts">
@@ -131,8 +141,7 @@ a {
       flex-direction: row;
       align-items: center;
       position: relative;
-      bottom: 18px;
-      width: 50%;
+      top: -30px;
 
       li {
         margin: 0 2.5rem;
