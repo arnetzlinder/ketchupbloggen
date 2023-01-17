@@ -29,7 +29,9 @@ a {
   &:hover {
     color: #000;
   }
+  
 }
+
 @media screen and (min-width: 740px) {
   li {
     margin: 2rem 0;
@@ -38,11 +40,9 @@ a {
   li:last-child {
     padding-bottom: 6rem;
   }
+
 }
 
-h2 {
-  margin-bottom: 3rem;
-}
 
 @media screen and (min-width: 1400px) {
   li {
@@ -53,5 +53,6 @@ h2 {
     margin: 0;
     padding: 0;
   }
+
 }
 </style>
