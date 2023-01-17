@@ -27,8 +27,8 @@ let recepies: {
     figcaption:
       'Krämig soppa med lena smaker där ketchup står för den oväntade smaksensationen',
     ingredient:
-      '<ul><li>4 msk Smör </li> <li> 1 st Gul lök </li><li>  1 kg Tomater </li><li> 1 st Lagerblad </li><li> 4 kvistar Basilika </li><li> 4 kvistar Persilja </li><li> 2 liter Grönsaksbuljong </li><li> 1 msk Tomatketchup </li><li> 1 dl Vispgrädde</li></ul>',
-    desc: '1. Smält smöret i en stor stekgryta. Lägg i hackad gul lök och stek på låg värme i 5 min eller tills den är mjuk. Rör om då och då. Tillsätt tomater, lagerblad, basilika och persilja. Krydda med salt och peppar och låt sjuda i 15 min eller tills tomaterna har kokats ihop och det mesta av vätskan har kokat bort. Rör om då och då.<br>2. Vrid upp till medelstark värme. Häll i grönsaksbuljongen och koka upp med lock och låt sjuda i 25 min. <br>3. Ta av soppgrytan från plattan och låt svalna något. Rör ner ketchup i soppan. Mix ihop soppan med en stavmixer tills soppan är slät. <br>4. Häll tillbaka soppan och hetta upp igen. Rör ner grädden och hetta upp soppan i 1-2 minuter tills genomvarm. Smaka av med salt/peppar och servera med några blad basilika som garnityr. ',
+      '<ul><li> 4 msk Smör </li> <li> 1 st Gul lök </li><li>  1 kg Tomater </li><li> 4 kvistar Basilika </li><li> 4 kvistar Persilja </li><li> 2 liter Grönsaksbuljong </li><li> 1 msk Tomatketchup </li><li> 1 dl Vispgrädde</li></ul>',
+    desc: '1. Smält smöret i en stor stekgryta. Lägg i hackad gul lök och stek på låg värme tills den är mjuk. Rör om då och då. Tillsätt tomater, basilika och persilja. Krydda med salt och peppar och låt sjuda tills tomaterna har kokats ihop och det mesta av vätskan har kokat bort.<br><br>2. Vrid upp till medelstark värme. Häll i grönsaksbuljongen och koka upp med lock och låt sjuda i 25 min. <br><br>3. Ta av soppgrytan från plattan och låt svalna något. Rör ner ketchup i soppan. Mix ihop soppan med en stavmixer tills soppan är slät. <br><br>4. Häll tillbaka soppan och hetta upp igen. Rör ner grädden och hetta upp soppan i 1-2 minuter tills genomvarm. Smaka av med salt/peppar och servera med några blad basilika som garnityr. ',
   },
   {
     id: 2,

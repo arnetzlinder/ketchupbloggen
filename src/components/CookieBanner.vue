@@ -66,7 +66,7 @@ div {
 
 button:hover {
   cursor: pointer;
-  background-color: $secondaryColor150;
+  background-color: $secondaryColor200;
   color: $primaryColor100;
 }
 

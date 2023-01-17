@@ -37,7 +37,6 @@ header {
     .h1-container {
       position: relative;
       z-index: 3;
-      padding: 11px;
       width: 350px;
       h1 {
         font-size: 32px;

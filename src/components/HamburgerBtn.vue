@@ -43,7 +43,7 @@ button {
   z-index: 15;
 
   &:hover {
-    background-color: #aa1700;
+    background-color: $primaryColor250;
   }
 
   &:active {
@@ -51,7 +51,7 @@ button {
   }
 
   &:disabled {
-    background-color: #939191;
+    background-color: $accentColor100;
   }
 }
 @media screen and (min-width: 1400px) {

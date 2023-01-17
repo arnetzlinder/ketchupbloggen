@@ -79,7 +79,7 @@ export default {
     margin-left: auto;
 
     &:hover {
-      background-color: #aa1700;
+      background-color: $primaryColor250;
     }
 
     &:active {
@@ -87,19 +87,20 @@ export default {
     }
 
     &:disabled {
-      background-color: #939191;
+      background-color: $accentColor100;
     }
   }
 }
 aside.show {
   display: block;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   position: fixed;
-  width: 100vw;
-  height: 100%;
   z-index: 50;
   background-color: $secondaryColor200;
+  margin-bottom: 5rem;
 }
 
 aside {
