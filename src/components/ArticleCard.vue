@@ -40,7 +40,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .article-card {
   background-color: $secondaryColor300;
   color: $primaryColor100;
@@ -53,24 +52,29 @@ export default {
   }
 
   .imageplay {
-    margin: auto;
+    display: flex;
+    justify-content: center;
   }
+
   .figcaption {
     font-family: $secondaryFont;
     margin: 0 1rem;
+
   }
 
   button {
     background-color: $primaryColor200;
     color: $primaryColor100;
     font-family: $secondaryFont;
-    font-size: 0.875rem; // ta oss friheten att ändra till font size 15 pga acc standard?
+    font-size: 1rem; // ta oss friheten att ändra till font size 15 pga acc standard?
     width: 120px;
     height: 35px;
-    margin-left: auto;
-    margin-top: 10px;
     border-radius: 10px;
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
 
     &:hover {
       background-color: #aa1700;
@@ -98,5 +102,4 @@ aside {
   background-color: $primaryColor200;
   color: $primaryColor100;
 }
-
 </style>

@@ -16,10 +16,11 @@
       <!-- (variabel, variabelindex) i just denna loopen-->
       <!-- samma som:
                 for (let i = 0; i < imageData.length; i++) {
-                const item = imageData[i];
-                const div = document.createElement('div');
-                div.classList.add(currentIndex === i ? 'active' : ''); //forenklad if/else loop (om currentIndex === i är true; lägg på klass .active, annars inte)
-                div.setAttribute('key', i);
+                  const item = imageData[i];
+                  const div = document.createElement('div');
+                  div.classList.add(currentIndex === i ? 'active' : ''); //forenklad if/else loop (om currentIndex === i är true; lägg på klass .active, annars inte)
+                  div.setAttribute('key', i);
+                }
             måste sätta key så Vue vet vad den ska hålla koll på. 
             https://stackoverflow.com/questions/49675988/how-to-get-the-v-for-index-in-vue-js
             https://vuejs.org/guide/essentials/list.html-->
@@ -69,7 +70,6 @@ button {
   color: #dad0b2;
   border: none;
   padding: 0;
-  cursor: pointer;
   position: relative;
   top: -80px;
 }
@@ -104,6 +104,7 @@ img {
   box-shadow: 1px 1px 5px #333;
   position: relative;
   top: -40px;
+  border: 1px solid whitesmoke
 }
 
 .dots div.active {

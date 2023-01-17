@@ -39,6 +39,5 @@ export default {
   padding: 10px;
   background-color: transparent;
   border: none;
-  cursor: pointer;
 }
 </style>

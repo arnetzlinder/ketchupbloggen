@@ -5,4 +5,8 @@ body {
   box-sizing: border-box;
   background-color: $primaryColor100;
   font-family: $secondaryFont;
+
+  button {
+    cursor: pointer;
+  }
 }

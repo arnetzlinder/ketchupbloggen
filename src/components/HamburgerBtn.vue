@@ -40,12 +40,16 @@ button {
   align-items: center;
   text-align: center;
   display: inline;
+  z-index: 15;
+
   &:hover {
     background-color: #aa1700;
   }
+
   &:active {
     background-color: $secondaryColor200;
   }
+
   &:disabled {
     background-color: #939191;
   }
