@@ -68,6 +68,7 @@ nav {
   border-radius: 8px;
   position: absolute;
   margin-top: -5px;
+  margin-left: 8px;
   z-index: 10;
 
   h2 {
