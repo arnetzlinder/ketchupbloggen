@@ -63,7 +63,7 @@ export default {
     background-color: #d9d9d9;
     border-radius: 8px;
     border: 1px solid black;
-    z-index: 10;
+    z-index: 20;
     position: absolute;
     margin-left: -100px;
     height: 185px;
