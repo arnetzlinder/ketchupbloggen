@@ -40,6 +40,7 @@ button {
   align-items: center;
   text-align: center;
   display: inline;
+  z-index: 15;
 
   &:hover {
     background-color: #aa1700;
