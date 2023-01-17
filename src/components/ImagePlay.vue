@@ -70,7 +70,6 @@ button {
   color: #dad0b2;
   border: none;
   padding: 0;
-  cursor: pointer;
   position: relative;
   top: -80px;
 }
