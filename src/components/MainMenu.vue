@@ -132,6 +132,7 @@ a {
       align-items: center;
       position: relative;
       bottom: 18px;
+      width: 50%;
 
       li {
         margin: 0 2.5rem;
