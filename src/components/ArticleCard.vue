@@ -46,6 +46,8 @@ export default {
   font-family: $primaryFont;
   padding: 1rem;
   margin: 0;
+  border-radius: 5px;
+  margin-bottom: 10px;
 
   h2 {
     text-align: center;
