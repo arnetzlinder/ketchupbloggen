@@ -35,7 +35,7 @@ div {
   bottom: 0;
   width: 100vw;
   padding-block: 0.185rem;
-  z-index: 10;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,10 +49,12 @@ div {
   button {
     border: none;
     margin-inline-end: 1rem;
+    padding-block: 0.15rem;
     width: 5.875rem;
     border: 1px solid black;
     border-radius: 0.625rem;
     background-color: $secondaryColor100;
+    color: black;
     font-size: 0.875rem;
     line-height: 1.0625rem;
     display: flex;
@@ -60,6 +62,12 @@ div {
     text-align: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: $secondaryColor150;
+  color: $primaryColor100;
 }
 
 @media screen and (min-width: 740px) {
@@ -70,7 +78,7 @@ div {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1400px) {
   div {
     p {
       margin-inline-start: 28.625rem;

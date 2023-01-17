@@ -3,7 +3,7 @@
     <div class="aside-container">
       <picture>
         <source media="(min-width: 740px)" srcset="../../public/about-ketchup-tablet.webp" />
-        <source media="(min-width: 1440px)" srcset="../../public/about-ketchup-desktop.webp" />
+        <source media="(min-width: 1400px)" srcset="../../public/about-ketchup-desktop.webp" />
         <img
           src="../../public/about-ketchup-mobile.webp"
           alt="small Heinz ketchup bottle on a white background, photo studio setup."
@@ -17,7 +17,7 @@
         <h2 class="aside-header">Om Ketchup</h2>
         <p class="aside-text-container">
           <span class="paragraph aside-text-container_p1">
-            Ketchup är en kryddsås som förekommer i många varianter. Tomatketchup är vanlig i Europa och USA[1], men det
+            Ketchup är en kryddsås som förekommer i många varianter. Tomatketchup är vanlig i Europa och USA men det
             finns även andra såsom valnötsketchup, svampketchup, anjovisketchup, ostronketchup och mango-ketchup.<br />
           </span>
           <span class="paragraph aside-text-container_p2">
@@ -25,23 +25,13 @@
             hämtat från den sydkinesiska fisksåsen khetsap eller den indonesiska ketjapen som härstammar från den
             förstnämnda. Tomatketchup i sin nutida version, innehållande tomat, socker, salt, ättika och kryddor,
             började tillverkas i större industriell skala år 1876 av Henry Heinz, men förekom även långt tidigare under
-            samma sekel i amerikanska receptböcker, liksom varianter baserade på svamp. I amerikansk och kanadensisk
-            engelska används ibland ordet catsup med samma betydelse som ketchup.
+            samma sekel i amerikanska receptböcker, liksom varianter baserade på svamp.
           </span>
           <span class="paragraph aside-text-container_p3">
-            Historik (h2-rubrik) På 1690-talet blandade kineser ihop en redning av syrad fisk och kryddor. De kallade
-            det hela för (i Amoy-dialekten av den lokala min-kinesiskan) kôe-tjiap eller kê-tjiap (鮭汁, mandarin guī
-            zhī), med betydelsen "lag efter syrad fisk" (鮭, karp; 汁, jos) eller "lag efter skaldjur". Tidigt 1700-tal
-            hade bruket av denna redning spridits till de malajiska staterna i nuvarande Malaysia och Indonesien, där
-            det kom att upptäckas vid brittiska utforskningar av regionen. Det indonesisk-malajiska ordet för såsen var
-            kĕtjap (kĕchap). Det ordet kom att utvecklas till engelskans ord ketchup. Många varianter av ketchup hade då
-            utvecklats i olika delar av de kinesiskpåverkade delarna av Asien. Den tomatbaserade versionen utvecklades
-            sent och finns första gången belagd 1801, då ett recept på tomatketchup skrivet av en Sandy Addison trycktes
-            i en amerikansk kokbok – Sugar House Book (1801). I Sverige fick tomatketchupen sitt genombrott på
-            1950-talet. AB Felix började tillverka sin tomatketchup 1955, och 1960 började även Slotts tillverka
-            tomatketchup. I Sverige används tomatketchup särskilt på diverse potatis-, pasta- och korvrätter, ofta
-            istället för sås. Tomatketchup på pasta är något som är mer ovanligt i exempelvis Storbritannien och inte
-            minst Italien.
+            I Sverige fick tomatketchupen sitt genombrott på 1950-talet. AB Felix började tillverka sin tomatketchup
+            1955, och 1960 började även Slotts tillverka tomatketchup. I Sverige används tomatketchup särskilt på
+            diverse potatis-, pasta- och korvrätter, ofta istället för sås. Tomatketchup på pasta är något som är mer
+            ovanligt i exempelvis Storbritannien och inte minst Italien.
           </span>
         </p>
       </div>
@@ -65,6 +55,7 @@ aside {
   overflow: auto;
   background-color: $secondaryColor200;
   color: #dad0b2;
+  margin-bottom: 10px;
 }
 .aside-container {
   gap: 1rem;
@@ -97,7 +88,7 @@ aside {
 @media (width >= 740px) {
   aside {
     max-width: 360px;
-    max-height: 1194px;
+    max-height: 1242px;
     border-radius: 0.625rem;
   }
 }

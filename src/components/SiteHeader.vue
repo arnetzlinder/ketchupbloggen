@@ -46,7 +46,7 @@ header {
     }
   }
 }
-@media screen and (min-width: 744px) {
+@media screen and (min-width: 740px) {
   header {
     height: 322px;
     background-image: url('/KetchupbloggenHeaderImg-Tablet.webp');
@@ -60,7 +60,7 @@ header {
     }
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1400px) {
   header {
     height: 436px;
     background-image: url('/KetchupbloggenHeaderImg-Desktop.webp');

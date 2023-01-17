@@ -54,7 +54,7 @@ button {
     background-color: #939191;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1400px) {
   button {
     visibility: hidden;
   }

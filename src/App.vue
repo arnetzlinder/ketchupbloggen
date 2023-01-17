@@ -28,12 +28,22 @@ import AboutKetchup from './components/AboutKetchup.vue';
   margin-inline: auto;
 }
 
+main {
+  width: 100%;
+}
+
 @media (width >= 740px) {
   .content-wrapper {
     display: flex;
+    max-width: 100%;
     flex-direction: row-reverse;
-    max-width: 1000px;
-    gap: 1rem;
+    gap: 1.5rem;
+  }
+}
+@media (width >= 1400px) {
+  .content-wrapper {
+    gap: 2.125rem;
+    max-width: 934px;
   }
 }
 </style>
