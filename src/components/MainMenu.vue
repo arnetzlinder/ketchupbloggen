@@ -23,13 +23,13 @@ export default {
   },
   props: ['isOpen'],
   mounted() {
-    this.minWidth = window.innerWidth >= 1440;
+    this.minWidth = window.innerWidth >= 1400;
     window.addEventListener('resize', this.checkWidth);
   },
   // mounted() funktion som anropas efter att komponenten har lagts till i DOM, kontrollerar här koden bredden på webbläsarfönstret vid sidladdning och även varje gång fönstret ändras.
   methods: {
     checkWidth() {
-      this.minWidth = window.innerWidth >= 1440;
+      this.minWidth = window.innerWidth >= 1400;
       // Om bredden är större än eller lika med 1440 pixlar ställs egenskapen minWidth till true.
     },
   },
@@ -131,7 +131,7 @@ a {
       flex-direction: row;
       align-items: center;
       position: relative;
-      top: -30px;
+      bottom: 18px;
 
       li {
         margin: 0 2.5rem;

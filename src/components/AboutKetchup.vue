@@ -89,7 +89,13 @@ aside {
   aside {
     max-width: 360px;
     max-height: 1242px;
-    border-radius: 0.625rem;
+    border-radius: 0.625rem 0 0 0.625rem;
+  }
+}
+
+@media (width >= 1400px) {
+  aside {
+    border-radius: 0.5rem;
   }
 }
 </style>
