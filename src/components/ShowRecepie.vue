@@ -51,6 +51,8 @@
     padding: 2rem;
     height: 94.5%;
     overflow: scroll;
+    max-width: 22.5rem;
+    margin-inline: auto;
     .img-container {
       display: flex;
       flex-direction: column;
@@ -100,10 +102,8 @@
   
 @media (width >= 740px) {
   .show-recepie {
-    .text-container {
-      padding-inline: 10rem;
-    }
-
+    max-width: 23rem;
+    
     h2 {
       text-align: center;
     }
@@ -129,9 +129,7 @@
 
 @media (width >= 1400px) {
   .show-recepie {
-    .text-container {
-      padding-inline: 27rem;
-    }
+    max-width: 30rem;
 
     img {
       // width: 490.28px;
