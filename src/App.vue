@@ -32,6 +32,7 @@ main {
   width: 100%;
 }
 
+
 @media (width >= 740px) {
   .content-wrapper {
     display: flex;
