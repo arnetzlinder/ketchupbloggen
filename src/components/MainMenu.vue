@@ -1,26 +1,34 @@
 <template>
   <transition name="slide-fade">
-    <nav v-if="isOpen || minWidth">
-      <!--if-sats, visas/ visas inte om isOpen ELLER minWidth är true/false -->
+    <nav v-if="isOpen">
+      <!--if-sats, visas/ visas inte om isOpen är true/false -->
       <h2>Meny</h2>
-      <ul>
-        <li><a href="#">Historia</a></li>
-        <li><a href="#">Förrätter</a></li>
-        <li><a href="#">Huvudrätter</a></li>
-        <li><a href="#">Efterrätter</a></li>
+      <ul class="less-than-1400">
+        <NavLinks />
       </ul>
     </nav>
   </transition>
+  <nav v-if="minWidth">
+    <!--if-sats, visas/ visas inte om minWidth är true/false -->
+    <ul class="1400">
+      <NavLinks />
+    </ul>
+  </nav>
 </template>
 
 <script lang="ts">
+import NavLinks from './NavLinks.vue';
 export default {
+  components: {
+    NavLinks,
+  },
   data() {
     return {
       minWidth: false,
       // deklarerar variabel minWidth
     };
   },
+
   props: ['isOpen'],
   mounted() {
     this.minWidth = window.innerWidth >= 1400;
@@ -59,7 +67,8 @@ nav {
   outline: 1px solid #5a5a5a;
   border-radius: 8px;
   position: absolute;
-  margin-top: -14px;
+  margin-top: -5px;
+  margin-left: 8px;
   z-index: 10;
 
   h2 {
@@ -77,14 +86,6 @@ nav {
     display: flex;
     flex-direction: column;
     margin: 0;
-
-    li {
-      margin: 1rem 0;
-    }
-
-    li:last-child {
-      margin-bottom: 5rem;
-    }
   }
 }
 
@@ -99,23 +100,18 @@ a {
   &:hover {
     color: #000;
   }
+
 }
+
 @media screen and (min-width: 740px) {
   nav {
     width: 375px;
-
-    li {
-      margin: 2rem 0;
-    }
-
-    li:last-child {
-      padding-bottom: 6rem;
-    }
   }
 
   h2 {
     margin-bottom: 3rem;
   }
+
 }
 
 @media screen and (min-width: 1400px) {
@@ -131,22 +127,14 @@ a {
       flex-direction: row;
       align-items: center;
       position: relative;
-      bottom: 18px;
-      width: 50%;
-
-      li {
-        margin: 0 2.5rem;
-      }
-
-      li:last-child {
-        margin: 0;
-        padding: 0;
-      }
+      top: -30px;
     }
 
     h2 {
       display: none;
     }
+
   }
+
 }
 </style>

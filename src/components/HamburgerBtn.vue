@@ -1,5 +1,5 @@
 <template>
-  <button id="menuBtn" @click="menuOpenClose" :class="{ open: menuIsOpen }">
+  <button id="menuBtn" class="menuBtn" @click="menuOpenClose" :class="{ open: menuIsOpen }">
     <!--:class är samma som v-bind:class="{ 'open': menuIsOpen }"-->
     Meny
   </button>
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-button.open {
+.menuBtn.open {
   background-color: $secondaryColor200;
 }
 
