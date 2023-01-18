@@ -12,6 +12,7 @@ footer {
   display: block;
   width: 100vw;
   background-color: #dad0b2;
+  overflow-x: hidden;
 
   p {
     padding-inline-start: 0.5rem;

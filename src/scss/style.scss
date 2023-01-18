@@ -3,6 +3,7 @@
 
 body {
   box-sizing: border-box;
+  overflow-x: hidden;
   background-color: $primaryColor100;
   font-family: $secondaryFont;
 

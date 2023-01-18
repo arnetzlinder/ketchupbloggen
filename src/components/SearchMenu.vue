@@ -41,6 +41,8 @@ export default {
 .search-container {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  margin-inline-end: 1rem;
 
   .input-container {
     position: relative;
