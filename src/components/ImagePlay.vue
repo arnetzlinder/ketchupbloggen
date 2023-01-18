@@ -116,7 +116,7 @@ img {
   scale: 1.5;
 }
 
-@media (width >= 1400) {
+@media (width >= 1400px) {
   // .imageplay-wrapper {
   // }
 
