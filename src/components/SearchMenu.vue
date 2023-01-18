@@ -65,7 +65,7 @@ export default {
     background-color: #d9d9d9;
     border-radius: 8px;
     border: 1px solid black;
-    z-index: 20;
+    z-index: 50;
     position: absolute;
     margin-left: -100px;
     height: 185px;

@@ -25,7 +25,7 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 10;
     background: linear-gradient(to left, rgba(83, 10, 2, 0) 0%, rgba(83, 10, 2, 0.688) 100%);
   }
 }
@@ -36,7 +36,7 @@ header {
     background-image: url('/KetchupbloggenHeaderImg-Mobile.webp');
     .h1-container {
       position: relative;
-      z-index: 3;
+      z-index: 20;
       width: 350px;
       h1 {
         font-size: 32px;
