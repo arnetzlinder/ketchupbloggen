@@ -8,11 +8,11 @@
         </div>
         <div v-html="cardData.figcaption" class="figcaption"></div>
       </div>
-      <button @click="recepieShowHide" class="recepieButton">Visa recept</button>
+      <button @click.self="recepieShowHide" class="recepieButton">Visa recept</button>
     </div>
   </div>
   <aside :class="{ show: recepieShows }">
-    <ShowRecepie :card-data="cardData" @click="recepieShowHide" />
+    <ShowRecepie :card-data="cardData" @close="recepieShowHide" />
   </aside>
 </template>
 
