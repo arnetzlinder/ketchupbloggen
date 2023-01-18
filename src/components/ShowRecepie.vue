@@ -49,7 +49,6 @@
     font-family: $primaryFont;
     position: relative;
     padding: 2rem;
-    border: 4px solid pink;
     height: 94.5%;
     overflow: scroll;
     .img-container {
