@@ -11,3 +11,8 @@ body {
     cursor: pointer;
   }
 }
+
+.scroll-disabled {
+  overflow-y: hidden;
+  max-height: 100vh;
+}

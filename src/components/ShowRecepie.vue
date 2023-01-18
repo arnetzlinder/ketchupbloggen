@@ -44,7 +44,7 @@ export default {
   font-family: $primaryFont;
   position: relative;
   padding: 2rem;
-  height: 94.5%;
+  min-height: 100vh;
   overflow: scroll;
   max-width: 22.5rem;
   margin-inline: auto;
@@ -84,7 +84,7 @@ export default {
     background-color: $primaryColor100;
     border: none;
     border-radius: 10px;
-    position: relative;
+    // position: relative;
     margin-bottom: 2rem;
     color: black;
 
@@ -97,6 +97,7 @@ export default {
 @media (width >= 740px) {
   .show-recepie {
     max-width: 23rem;
+    min-height: 100vh;
 
     h2 {
       text-align: center;
@@ -109,8 +110,8 @@ export default {
   }
 
   .button-container {
-    position: absolute;
-    bottom: 1.75rem;
+    position: relative;
+    bottom: 0;
     right: 1.5rem;
     .close-button {
       scale: 1.8;
@@ -142,7 +143,6 @@ export default {
     }
   }
   .button-container {
-    margin-right: 15rem;
     .close-button {
       scale: 1;
       width: 174px;

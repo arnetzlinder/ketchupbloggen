@@ -34,6 +34,7 @@ export default {
   methods: {
     recepieShowHide() {
       this.recepieShows = !this.recepieShows;
+      document.body.classList.toggle('scroll-disabled');
       // this.$emit('recepieShow', this.recepieShows);
       console.log('Click event received, recepieShows is ', this.recepieShows);
     },
@@ -94,9 +95,11 @@ export default {
 aside.show {
   display: block;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   top: 0;
+  bottom: 0;
   left: 0;
+  overflow-y: scroll;
   position: fixed;
   z-index: 50;
   background-color: $secondaryColor200;
