@@ -1,7 +1,7 @@
 <template>
   <div class="search-container">
     <div class="input-container">
-      <input @click="toggleSearch()" type="text" placeholder="ketchupsoppa" />
+      <input @click="toggleSearch()" type="text" placeholder="ketchupsoppa"/>
         <transition name="slide-fade">
           <div class="search-menu" v-if="searchOpen">
             <ul>
