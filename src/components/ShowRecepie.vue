@@ -88,8 +88,8 @@ export default {
     margin-bottom: 2rem;
     color: black;
 
-    .close-button:hover {
-      background-color: $secondaryColor200;
+    &:hover {
+      background-color: #d5c9a6;
     }
   }
 }

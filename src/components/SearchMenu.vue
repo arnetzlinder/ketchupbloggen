@@ -1,14 +1,16 @@
 <template>
   <div class="search-container">
     <div class="input-container">
-      <input @click="toggleSearch()" type="text" placeholder="ketchupsoppa" />
-      <div class="search-menu" v-if="searchOpen">
-        <ul>
-          <li>Ketchupsoppa</li>
-          <li>Ketchupsoppa med sting</li>
-          <li>Ketchupsoppa med klös</li>
-        </ul>
-      </div>
+      <input @click="toggleSearch()" type="text" placeholder="ketchupsoppa"/>
+        <transition name="slide-fade">
+          <div class="search-menu" v-if="searchOpen">
+            <ul>
+              <li>Ketchupsoppa</li>
+              <li>Ketchupsoppa med sting</li>
+              <li>Ketchupsoppa med klös</li>
+            </ul>
+          </div>
+        </transition>
     </div>
     <SearchIcon />
   </div>
@@ -37,6 +39,23 @@ export default {
 
 <style lang="scss" scoped>
 @import '../scss/style.scss';
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from {
+  transform: translateY(-40px);
+  opacity: 0;
+}
+.slide-fade-leave-to {
+  transform: translateX(50px);
+  opacity: 0;
+}
 
 .search-container {
   display: flex;

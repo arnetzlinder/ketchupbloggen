@@ -46,11 +46,11 @@ a {
 
 @media screen and (min-width: 1400px) {
   li {
-    margin: 0 2.5rem;
+    margin: 0 0 0 2.5rem;
   }
 
   li:last-child {
-    margin: 0;
+    margin: 0 0 0 2.5rem;
     padding: 0;
   }
 

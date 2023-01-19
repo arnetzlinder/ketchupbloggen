@@ -8,9 +8,9 @@
       </ul>
     </nav>
   </transition>
-  <nav v-if="minWidth">
+  <nav class="desctop" v-if="minWidth">
     <!--if-sats, visas/ visas inte om minWidth är true/false -->
-    <ul class="1400">
+    <ul>
       <NavLinks />
     </ul>
   </nav>
@@ -53,9 +53,12 @@ export default {
   transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
 }
 
-.slide-fade-enter-from,
+.slide-fade-enter-from {
+  transform: translateY(40px);
+  opacity: 0;
+}
 .slide-fade-leave-to {
-  transform: translateY(-50px);
+  transform: translateX(-50px);
   opacity: 0;
 }
 
@@ -65,7 +68,7 @@ nav {
   width: 275px;
   height: auto;
   outline: 1px solid #5a5a5a;
-  border-radius: 8px;
+  border-radius: 10px;
   position: absolute;
   margin-top: -5px;
   margin-left: 8px;
@@ -106,6 +109,7 @@ a {
 @media screen and (min-width: 740px) {
   nav {
     width: 375px;
+    top: 333px;
   }
 
   h2 {
@@ -115,12 +119,13 @@ a {
 }
 
 @media screen and (min-width: 1400px) {
-  nav {
+  .desctop {
     outline: none;
     padding: 0;
     width: 100%;
     height: 0;
     margin-left: 8px;
+    top: 480px;
 
     ul {
       display: flex;

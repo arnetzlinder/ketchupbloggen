@@ -63,6 +63,7 @@ export default {
   .figcaption {
     font-family: $secondaryFont;
     margin: 0 1rem;
+    line-height: 1.5rem;
   }
 
   button {
@@ -78,6 +79,7 @@ export default {
     justify-content: center;
     align-items: center;
     margin-left: auto;
+    margin-top: 10px;
 
     &:hover {
       background-color: $primaryColor250;
@@ -137,7 +139,6 @@ aside {
       text-align: left;
     }
     .figcaption {
-      line-height: 1.5rem;
       align-self: start;
       margin-block-start: 1rem;
       padding-left: 1.5rem;
