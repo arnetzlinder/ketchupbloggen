@@ -40,7 +40,7 @@ button {
   align-items: center;
   text-align: center;
   display: inline;
-  z-index: 15;
+  z-index: 40;
 
   &:hover {
     background-color: $primaryColor250;

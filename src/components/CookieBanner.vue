@@ -35,7 +35,7 @@ div {
   bottom: 0;
   width: 100vw;
   padding-block: 0.185rem;
-  z-index: 100;
+  z-index: 70;
   display: flex;
   justify-content: space-between;
   align-items: center;

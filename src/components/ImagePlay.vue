@@ -116,19 +116,4 @@ img {
   scale: 1.5;
 }
 
-@media (width >= 1400px) {
-  // .imageplay-wrapper {
-  // }
-
-  // }
-
-  .backward {
-    top: 97px;
-    left: 0px;
-  }
-
-  .dots div {
-    top: -150px;
-  }
-}
 </style>

@@ -101,7 +101,7 @@ aside.show {
   left: 0;
   overflow-y: scroll;
   position: fixed;
-  z-index: 50;
+  z-index: 60;
   background-color: $secondaryColor200;
   margin-bottom: 5rem;
 }

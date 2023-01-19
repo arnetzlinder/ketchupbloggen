@@ -69,7 +69,7 @@ nav {
   position: absolute;
   margin-top: -5px;
   margin-left: 8px;
-  z-index: 10;
+  z-index: 30;
 
   h2 {
     font-size: 2rem;
