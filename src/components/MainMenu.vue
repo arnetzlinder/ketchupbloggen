@@ -8,9 +8,9 @@
       </ul>
     </nav>
   </transition>
-  <nav v-if="minWidth">
+  <nav class="desctop" v-if="minWidth">
     <!--if-sats, visas/ visas inte om minWidth är true/false -->
-    <ul class="1400">
+    <ul>
       <NavLinks />
     </ul>
   </nav>
@@ -119,12 +119,13 @@ a {
 }
 
 @media screen and (min-width: 1400px) {
-  nav {
+  .desctop {
     outline: none;
     padding: 0;
     width: 100%;
     height: 0;
     margin-left: 8px;
+    top: 480px;
 
     ul {
       display: flex;
