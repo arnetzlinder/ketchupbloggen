@@ -128,6 +128,7 @@ a {
       align-items: center;
       position: relative;
       top: -30px;
+      width: 50%;
     }
 
     h2 {
