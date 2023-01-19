@@ -1,6 +1,6 @@
 <template>
   <transition name="slide-fade">
-    <nav v-if="isOpen">
+    <nav v-if="isOpen" class="base">
       <!--if-sats, visas/ visas inte om isOpen är true/false -->
       <h2>Meny</h2>
       <ul class="less-than-1400">
@@ -8,7 +8,7 @@
       </ul>
     </nav>
   </transition>
-  <nav class="desctop" v-if="minWidth">
+  <nav class="desktop" v-if="minWidth">
     <!--if-sats, visas/ visas inte om minWidth är true/false -->
     <ul>
       <NavLinks />
@@ -67,11 +67,10 @@ nav {
   padding: 0;
   width: 275px;
   height: auto;
-  outline: 1px solid #5a5a5a;
+  border: 1px solid #5a5a5a;
   border-radius: 10px;
   position: absolute;
-  top: 240px;
-  margin-top: -5px;
+  top: 235px;
   margin-left: 0px;
   z-index: 30;
 
@@ -110,7 +109,7 @@ a {
 @media screen and (min-width: 740px) {
   nav {
     width: 375px;
-    top: 333px;
+    top: 327px;
   }
 
   h2 {
@@ -120,8 +119,12 @@ a {
 }
 
 @media screen and (min-width: 1400px) {
-  .desctop {
-    outline: none;
+
+  .base {
+    display: none;
+  }
+  .desktop {
+    border: none;
     padding: 0;
     width: 100%;
     height: 0;
