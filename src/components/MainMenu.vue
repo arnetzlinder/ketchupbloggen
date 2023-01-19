@@ -3,16 +3,12 @@
     <nav v-if="isOpen" class="base">
       <!--if-sats, visas/ visas inte om isOpen är true/false -->
       <h2>Meny</h2>
-      <ul class="less-than-1400">
-        <NavLinks />
-      </ul>
+      <NavLinks />
     </nav>
   </transition>
   <nav class="desktop" v-if="minWidth">
     <!--if-sats, visas/ visas inte om minWidth är true/false -->
-    <ul>
-      <NavLinks />
-    </ul>
+    <NavLinks />
   </nav>
 </template>
 
@@ -81,29 +77,6 @@ nav {
     margin-bottom: 2rem;
     text-align: center;
   }
-
-  ul {
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-  }
-}
-
-a {
-  color: $secondaryColor200;
-  text-underline-offset: 4px;
-
-  &:active {
-    color: $primaryColor200;
-  }
-
-  &:hover {
-    color: #000;
-  }
-
 }
 
 @media screen and (min-width: 740px) {
@@ -115,11 +88,9 @@ a {
   h2 {
     margin-bottom: 3rem;
   }
-
 }
 
 @media screen and (min-width: 1400px) {
-
   .base {
     display: none;
   }
@@ -131,20 +102,9 @@ a {
     margin-left: 8px;
     top: 480px;
 
-    ul {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      position: relative;
-      top: -30px;
-      width: 50%;
-    }
-
     h2 {
       display: none;
     }
-
   }
-
 }
 </style>
