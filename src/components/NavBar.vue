@@ -2,10 +2,10 @@
   <div class="nav-container">
     <HamburgerBtn @menu-click="toggleMenu" />
     <!-- Här kopplas klick-eventet "menu-click" ihop från komponenten "HamburgerBtn" (se rad 16 i HamburgerBtn.vue) @-tecken används för att koppla event. -->
+    <MainMenu :is-open="showMenu" />
+    <!-- Här kopplar vi ihop if-satsen från komponenten "MainMenu.vue", det görst med ett :-tecken, vilket är en förkortning av v-bind. -->
     <SearchMenu />
   </div>
-  <MainMenu :is-open="showMenu" />
-  <!-- Här kopplar vi ihop if-satsen från komponenten "MainMenu.vue", det görst med ett :-tecken, vilket är en förkortning av v-bind. -->
 </template>
 
 <script lang="ts">
