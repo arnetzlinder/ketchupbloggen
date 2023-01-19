@@ -70,7 +70,7 @@ nav {
   outline: 1px solid #5a5a5a;
   border-radius: 10px;
   position: absolute;
-  top: 199px;
+  top: 240px;
   margin-top: -5px;
   margin-left: 0px;
   z-index: 30;
