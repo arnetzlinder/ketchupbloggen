@@ -22,7 +22,23 @@ https://medieinstitutet.github.io/fed22d-grafiska-verktyg-ketchup/
 
 ## Screenshots
 
-![Screenshots](./screenshots/MicrosoftTeams-image (1).png) ![](./screenshots/MicrosoftTeams-image (2).png) ![](./screenshots/MicrosoftTeams-image (3).png)
+## LIGHTHOUSE VALIDATION
+
+![LIGHTHOUSE Validering](./screenshots/lighthouse.png)
+
+## LIVE SCREENSHOTS
+
+### Mobile: <br>
+
+![Mobile](./screenshots/mobile.png) <br>
+
+### Tablet: <br>
+
+![Tablet](./screenshots/tablet.png) <br>
+
+### Desktop: <br>
+
+![Desktop](./screenshots/desktop.png)
 
 ## Tech stack:
 
