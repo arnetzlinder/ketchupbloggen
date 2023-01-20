@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: '/fed22d-grafiska-verktyg-ketchup/',
+  base: '/ketchupbloggen/',
   define: {
     'process.env': {},
   },
